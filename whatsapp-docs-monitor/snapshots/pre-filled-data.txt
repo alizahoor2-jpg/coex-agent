@@ -1,0 +1,869 @@
+WhatsApp Business Platform
+WhatsApp Business Platform
+Business Messaging
+WhatsApp Business Platform
+WhatsApp Business Platform
+Overview
+About the platform
+Access tokens
+Permissions
+Pricing
+Pricing
+Authentication-international rates
+Conversation-based pricing
+AI Providers
+Get started
+Marketing messages
+Overview
+Get started
+Features
+Marketing templates
+Overview
+Custom marketing templates
+Call permission request message template
+Coupon code templates
+Limited-time-offer templates
+Media card carousel templates
+Guides
+Onboarding
+Measure conversions
+Track click events
+View metrics
+Deep links
+Send marketing messages
+Onboard business customers
+Pricing
+Changelog
+Utility messages
+Overview
+Utility templates
+Call permission request templates
+Authentication messages
+Overview
+Authenticating users
+Error signals
+Authentication templates
+One-tap autofill
+Zero-tap
+Copy code
+Bulk management
+Previews
+Service messages
+Overview
+Types of messages
+Address
+Audio
+Contacts
+Document
+Image
+Interactive
+URL button
+List buttons
+Media carousel
+Reply buttons
+Location
+Location request
+Reaction
+Sticker
+Text
+Video
+Calling
+Overview
+Configure call settings
+Business-initiated calls
+User call permissions
+User-initiated calls
+Session Initiation Protocol
+Call button messages and deep links
+Integration patterns
+Integration examples
+Reference
+Troubleshooting
+Calling sandbox account
+App Review guidelines
+Pricing
+FAQ
+Groups
+Overview
+Get started
+Group management
+Group messaging
+Webhooks
+Error codes
+Pricing
+FAQ
+Catalogs
+Overview
+Get started
+Upload inventory
+Set commerce settings
+Share products
+Receiving responses
+Messages
+Catalog link messages
+Catalog messages
+Catalog template messages
+Multi-product messages
+Multi-product template messages
+Product carousel messages
+Product carousel template messages
+Single-product messages
+Single-product template messages
+Partners
+Overview
+Become a partner
+Become a Tech Provider
+Become a Solution Partner
+Become a Measurement Partner
+Upgrade to Tech Partner
+App Review
+Embedded Signup
+Overview
+Implementation
+Onboarding for Tech Providers
+Onboarding for Solution Partners
+Cloud API flow
+Custom flows
+Pre-filling screens
+Pre-verified phone numbers
+Bypassing phone number screens
+Making website optional
+App-only install
+Hosted ES
+Automatic Events
+Versions
+v4
+v3
+v3 public preview
+v2 public preview
+Errors
+Onboard Business app users (Coexistence)
+Partner-initiated WABA creation
+Multi-Partner Solutions
+Overview
+Embedded Creation
+Migrate WABAs among solutions via Embedded Signup
+Migrate WABAs among solutions via Meta Business Suite
+Migrate WABAs among partners via Embedded Signup
+Migrating customers off solutions via Embedded Signup
+Migrating customers off solutions via Meta Business Suite
+Add WABAs to a Multi-Partner Solution
+Multi-Solution Conversations
+Partner-led business verification
+Pixel tracking
+Manage customer assets
+WhatsApp Business Accounts
+Phone numbers
+Overview
+Registering phone numbers via API
+System users
+Credit lines
+Webhooks
+Partner support
+Support
+Migrate numbers among partners via Embedded Signup
+Migrate numbers among partners programmatically
+Business customer support
+OBO model deprecation
+Webhooks
+Overview
+Create a webhook endpoint
+Create a test webhook endpoint
+Override the callback URL
+Webhooks reference
+account_alerts
+account_review_update
+account_update
+business_capability_update
+history
+message_template_components_update
+message_template_quality_update
+message_template_status_update
+messages
+Overview
+audio messages
+button messages
+contacts messages
+document messages
+edit messages
+errors messages
+group messages
+image messages
+interactive messages
+location messages
+order messages
+reaction messages
+revoke messages
+status messages
+sticker messages
+system messages
+text messages
+unsupported messages
+video messages
+partner_solutions
+payment_configuration_update
+phone_number_name_update
+phone_number_quality_update
+security
+smb_app_state_sync
+smb_message_echoes
+template_category_update
+user_preferences
+Template fundamentals
+Overview
+Components
+Languages
+Categorization
+Comparison
+Library
+Archival
+Management
+Overview
+Migration
+Configure time-to-live
+Tap target URL title override
+Quality and delivery
+Quality rating
+Review
+Pausing
+Business portfolio pacing
+Template pacing
+Messaging limits
+Upcoming changes to messaging limits
+Per-user marketing template limits
+Messaging features
+Media
+Read receipts
+Contextual replies
+Typing indicators
+Link previews
+Throughput
+Account assets
+Business phone numbers
+Overview
+Register a phone number
+Two-step verification
+Conversational components
+Business-scoped user IDs
+Business profiles
+Display names
+Official Business Accounts
+WhatsApp Business Accounts
+QR codes and message links
+Timezone IDs
+Analytics
+Ads that click to WhatsApp
+Welcome message sequences
+Payments
+Payments India
+Overview
+Onboarding APIs
+UPI Intent
+Dynamic VPA
+Cashfree
+Billdesk
+CCAvenue
+Payment links
+Enhanced payment links
+Payment gateway
+Order details templates
+Order status templates
+Checkout button templates
+Payments Brazil
+Overview
+Orders
+Pix
+Payment links
+Boleto
+One-click payments
+Order details templates
+Payment request CTA templates
+Data, Privacy, & Policy
+Policy enforcement
+Violations
+Blocking users
+Data privacy & security
+Local storage
+No storage
+Obtaining user opt-in
+User identity changes
+Support
+Support
+API status page
+Health status
+Load testing
+Experiments
+Use an existing WhatsApp number
+Resources
+API Reference
+Application
+Application Connected Client Businesses
+Application Solutions API
+Solution Creation API
+Business
+Add Phone Numbers API
+Business Account API
+Client WhatsApp Business Accounts API
+Owned WhatsApp Business Accounts
+WhatsApp Business Accounts API
+WhatsApp Business Partner Onboarding to MM Lite API
+WhatsApp Business Pre-Verified Phone Number Sharing API
+WhatsApp Business Pre-Verified Phone Numbers API
+Groups
+Groups Invite Link API
+Groups Join Requests API
+Groups Participants API
+Groups Query API
+Media
+Media API
+Media Download API
+Message History
+WhatsApp Business Message History Events API
+User
+Assigned WhatsApp Business Accounts API
+Webhooks
+WhatsApp Incoming Webhook Payload
+WhatsApp Account Number
+WhatsApp Account Number API
+WhatsApp Business Account
+Assigned Users Management API
+Conversational Automation API
+Extended Credits API
+Phone Number Management API
+Schedules API
+Subscribed Apps API
+Template API
+WhatsApp Business Account API
+WhatsApp Business Account Activities API
+WhatsApp Business Account Solutions List API
+WhatsApp Business Account Migration Intent
+Migration Intent Details API
+WhatsApp Business Bot
+Bot Details API
+WhatsApp Business Phone Number
+Block API
+Business Compliance Information API
+Business Encryption API
+Calling API
+Commerce Settings API
+Groups Management API
+Marketing Messages Lite API
+Media Upload API
+Message API
+Phone Number Deregister API
+Phone Number Registration
+Phone Number Verification Request Code API
+Settings API
+Verify Code API
+WhatsApp Business Account Official Business Account Status API
+WhatsApp Business Account Phone Number API
+WhatsApp Business Profile API
+WhatsApp Business QR Code API
+WhatsApp Business QR Code Management API
+WhatsApp Business Pre Verified Phone Number
+Request Verification Code API
+Verify Code API
+WhatsApp Business Pre-Verified Phone Number API
+WhatsApp Business Pre-Verified Phone Number Partners API
+WhatsApp Business Profile
+WhatsApp Business Profile Node API
+WhatsApp Business Solution
+Accept Deactivation Request API
+Access Token API
+Reject Deactivation Request API
+Send Deactivation Request API
+Solution Accept API
+Solution Details API
+Solution Reject API
+Changelog
+Error codes
+Pre-filling screens
+Updated
+:
+Nov 10, 2025
+If you know details about your customer’s business, such as its name and address, you can inject this data into Embedded Signup. This can pre-fill screens or bypass them altogether, dramatically reducing the amount of input and interaction required by your customers.
+For example, here is the business portfolio screen, pre-filled with business’s name, email address, website, country, and a pre-verified business phone number:
+We recommend that you inject
+business portfolio data
+, a
+pre-verified number
+, and
+phone profile data
+. Injecting this data provides the best experience for your customer, as it:
+entirely pre-fills the business portfolio screen
+bypasses the WhatsApp Business Account (WABA) selection and creation screens
+bypasses the business phone number selection and verification screens
+automatically sets the business phone number’s profile information in the WhatsApp client
+Embedded Signup Integration Helper
+The Embedded Signup Integration Helper provides a convenient way for you to create pre-filled data payloads and test their impact on the flow. To access the payload tool:
+Navigate to
+App Dashboard
+>
+WhatsApp
+>
+Embedded Signup Builder
+.
+Locate the
+Embedded Signup Setup
+section.
+Locate the
+Embedded Signup Pre-fill
+row.
+Click the
+Edit pre-fill data
+button.
+Injecting Data
+The
+FB.login
+function, which gets called when a business customer launches Embedded Signup, accepts an object as an argument. Use this object’s
+extras.setup
+property to inject data:
+// Launch method and callback registration
+const launchWhatsAppSignup = () => {
+FB.login(fbLoginCallback, {
+config_id: '<CONFIGURATION_ID>', // your configuration ID goes here
+response_type: 'code',
+override_default_response_type: true,
+extras: {
+setup: {
+business: {
+// Business portfolio data goes here
+},
+preVerifiedPhone: {
+// Pre-verified phone number IDs go here
+},
+phone: {
+// Phone number profile data goes here
+},
+whatsAppBusinessAccount: {
+// WABA IDs go here
+}
+},
+featureType: '',
+sessionInfoVersion: '3',
+}
+});
+}
+Business portfolio data
+You can inject the following business portfolio details into the business portfolio screen:
+business portfolio name
+business portfolio email address
+business portfolio website
+business portfolio country (as well as additional address details)
+business phone number
+Alternatively, you can inject
+just an existing business portfolio ID
+, and its existing details will automatically be injected into the screen. This can be useful if you want a pre-verified phone number to be associated with the customer’s existing business portfolio.
+Injecting business portfolio data will pre-fill the business portfolio screen and also cause Embedded Signup to skip the WABA selection and WABA creation screens.
+Injecting business phone number data will pre-fill the
+phone number addition screen
+:
+Note that even if you inject data, the business customer can still edit this data using the
+Edit
+button, if they wish.
+When a business customer completes the flow, the business portfolio information you injected will be used to create the business customer’s business portfolio and WABA.
+Business object syntax
+setup: {
+business: {
+id: <BUSINESS_PORTFOLIO_ID>,
+name: '<BUSINESS_PORTFOLIO_NAME>',
+email: '<BUSINESS_PORTFOLIO_EMAIL_ADDRESS>',
+website: '<BUSINESS_PORTFOLIO_WEBSITE>',
+address: {
+streetAddress1: '<BUSINESS_PORTFOLIO_STREET_ADDRESS_LINE_1>',
+streetAddress2: '<BUSINESS_PORTFOLIO_STREET_ADDRESS_LINE_2>',
+city: '<BUSINESS_PORTFOLIO_CITY>',
+state: '<BUSINESS_PORTFOLIO_STATE>',
+zipPostal: '<BUSINESS_PORTFOLIO_ZIP_CODE>',
+country: '<BUSINESS_PORTFOLIO_COUNTRY>'
+},
+phone: {
+code: <BUSINESS_PORTFOLIO_COUNTRY_CALLING_CODE>,
+number: '<BUSINESS_PORTFOLIO_PHONE_NUMBER>'
+},
+timezone: '<BUSINESS_PORTFOLIO_TIME_ZONE>'
+}
+}
+Business object parameters
+Placeholder
+Description
+Example value
+<BUSINESS_PORTFOLIO_ID>
+Integer or null
+Required if using an existing business portfolio, otherwise set to null or omit to create a new portfolio.
+Set to the business customer’s existing business portfolio ID if you want to pre-fill the screen with data already set on the business portfolio, or if you want to associate a pre-verified phone number with this portfolio.
+If set to a portfolio ID, we will check if the business customer owns the portfolio.
+If they own it, we will inject its existing data into the flow and ignore all other business object properties.
+If they do not own it, we will inject
+business.name
+,
+business.email
+,
+business.website
+, and
+address.country
+values, if they are
+all
+set. If
+any
+are not set, the flow will display the default business portfolio screen instead.
+Set to
+null
+(or omit the
+id
+property entirely) if you want to create a new business portfolio based on injected
+business.name
+,
+business.email
+,
+business.website
+, and
+address.country
+values.
+2729063490586005
+<BUSINESS_PORTFOLIO_NAME>
+String
+Required if creating a new business portfolio.
+Business portfolio name.
+If this name matches the name of an existing business portfolio owned by the business customer, the existing portfolio will be used instead (it will be treated as if you assigned the existing portfolio’s ID to the
+id
+property).
+This name will also be used as the WhatsApp Business Account name, which is only visible in the WhatsApp Manager.
+Maximum 100 characters.
+Wind & Wool
+<BUSINESS_PORTFOLIO_EMAIL_ADDRESS>
+String
+Required if creating a new business portfolio.
+The business’s email address.
+This information will appear in the
+Meta Business Suite
+>
+Business portfolio
+>
+Settings
+>
+Business info
+panel.
+support@windandwool.com
+<BUSINESS_PORTFOLIO_COUNTRY_CALLING_CODE>
+Integer
+Required if injecting a business phone number.
+Business phone number country calling code.
+1
+<BUSINESS_PORTFOLIO_PHONE_NUMBER>
+String
+Required if injecting a business phone number.
+Business phone number, without country calling code.
+6505559999
+<BUSINESS_PORTFOLIO_WEBSITE>
+String
+Required if creating a new business portfolio.
+The business’s website URL.
+This information will appear in the
+Meta Business Suite
+>
+Business portfolio
+>
+Settings
+>
+Business info
+panel.
+https://windandwool.com/
+<BUSINESS_PORTFOLIO_STREET_ADDRESS_LINE_1>
+String
+The business’s street address, line 1.
+This information will appear in the
+Meta Business Suite
+>
+Business portfolio
+>
+Settings
+>
+Business info
+panel.
+1 Hacker Way
+<BUSINESS_PORTFOLIO_STREET_ADDRESS_LINE_2>
+String
+The business’s street address, line 2.
+This information will appear in the
+Meta Business Suite
+>
+Business portfolio
+>
+Settings
+>
+Business info
+panel.
+Suite 1
+<BUSINESS_PORTFOLIO_CITY>
+String
+The business’s city address.
+This information will appear in the
+Meta Business Suite
+>
+Business portfolio
+>
+Settings
+>
+Business info
+panel.
+Menlo Park
+<BUSINESS_PORTFOLIO_STATE>
+String
+The business’s state address.
+This information will appear in the
+Meta Business Suite
+>
+Business portfolio
+>
+Settings
+>
+Business info
+panel.
+California
+<BUSINESS_PORTFOLIO_ZIP_CODE>
+String
+The business’s zip code address.
+This information will appear in the
+Meta Business Suite
+>
+Business portfolio
+>
+Settings
+>
+Business info
+panel.
+94025
+<BUSINESS_PORTFOLIO_COUNTRY>
+String
+Required if creating a new business portfolio.
+Business address
+ISO 3166-1 alpha-2
+⁠
+country code.
+US
+<BUSINESS_PORTFOLIO_TIME_ZONE>
+String
+The business’s time zone in
+UTC offset
+⁠
+format.
+UTC-07:00
+Example Business Object
+setup: {
+business: {
+name: 'Wind & Wool',
+email: 'support@windandwool.com',
+website: 'https://windandwool.com/',
+address: {
+streetAddress1: '1 Hacker Way',
+streetAddress2: 'Suite 1',
+city: 'Menlo Park',
+state: 'California',
+zipPostal: '94025',
+country: 'US'
+},
+phone: {
+code: 1,
+number: '6505559999'
+},
+timezone: 'UTC-07:00'
+}
+}
+Pre-verified phone numbers
+You can inject a
+pre-verified business phone number
+ID into Embedded Signup, which will cause Embedded Signup to skip the
+phone number addition
+and
+phone number verification
+screens.
+If you are injecting a pre-verified phone number along with business portfolio data (either creating a new portfolio or using an existing one), the
+business portfolio screen
+will be pre-filled with the pre-verified number:
+If you are not injecting business portfolio data along with a pre-verified number ID, the number will appear in the
+WABA selection screen
+:
+PreVerifiedPhone object syntax
+setup: {
+preVerifiedPhone: {
+ids: [
+'<PRE-VERIFIED_PHONE_NUMBER_ID>'
+]
+}
+}
+Replace
+<PRE-VERIFIED_PHONE_NUMBER_ID>
+with a unique, pre-verified business phone number ID.
+Note that although the
+ids
+value accepts an array of strings, if you include more than one pre-verified business phone number ID, only the first ID in the array will appear in the WABA selection screen.
+Example preVerifiedPhone object
+setup: {
+preVerifiedPhone: {
+ids: [
+'106540352242922'
+]
+}
+}
+Phone profile data
+You can inject the following phone number profile data. This data does not pre-fill any Embedded Signup screens, but it does populate the business phone number’s profile in the WhatsApp client, which is visible to WhatsApp users.
+Phone number profile display name
+Phone number category
+Phone number description
+If you do not include this data, the category will be set to
+Other
+, and the business customer must set or edit their profile data on their own.
+Your customers can do this in the
+WhatsApp Manager
+>
+Account tools
+>
+Phone numbers
+panel
+⁠
+by selecting their business phone number and accessing the
+Profile
+tab. You can also provide a way for them to update it programmatically by using the
+WhatsApp Business Profile API
+.
+Phone object syntax
+setup: {
+phone: {
+displayName: '<PHONE_PROFILE_DISPLAY_NAME>',
+category: '<PHONE_PROFILE_DISPLAY_CATEGORY>',
+description: '<PHONE_PROFILE_DISPLAY_DESCRIPTION>'
+}
+}
+Phone object parameters
+Placeholder
+Description
+Example value
+<PHONE_PROFILE_DISPLAY_NAME>
+String
+Required.
+Business profile display name, visible to WhatsApp users in the WhatsApp client (see screenshot above).
+Wind & Wool
+<PHONE_PROFILE_DISPLAY_CATEGORY>
+String
+Required.
+Business profile display category.
+See the vertical field in the
+GET /<WHATSAPP_BUSINESS_PHONE_ID>/whatsapp_business_profile
+endpoint reference for a list of possible values.
+APPAREL
+<PHONE_PROFILE_DISPLAY_DESCRIPTION>
+String
+Required.
+Business phone number profile description.
+Maximum 512 characters.
+Rendered emojis are supported however their unicode values are not. Emoji unicode values must be Java- or JavaScript-escape encoded.
+Hyperlinks can be included but will not render as clickable links.
+Markdown is not supported.
+Bespoke artisan apparel and lifestyle goods from upcoming designers.
+Example phone object
+setup: {
+phone: {
+displayName: 'Wind & Wool',
+category: 'APPAREL',
+description: 'Bespoke artisan apparel and lifestyle goods from upcoming designers.'
+}
+}
+WhatsApp Business Accounts
+If you are injecting a pre-verified phone number, you can also include a WABA ID. This will associate the pre-verified number with the existing WABA instead of with a new one that the business customer would be prompted to create as part of the flow.
+WhatsAppBusinessAccount object syntax
+setup: {
+whatsAppBusinessAccount: {
+ids: '<WABA_ID>'
+}
+}
+Replace
+<WABA_ID>
+with a unique WABA ID.
+Example whatsAppBusinessAccount object
+This example associates a pre-verified phone number with an existing WABA.
+setup: {
+preVerifiedPhone: {
+ids: [
+'106540352242922'
+]
+},
+whatsAppBusinessAccount: {
+id: [
+'432428883295692'
+]
+}
+}
+Examples
+New business portfolio, pre-verified number, and display profile
+// Launch method and callback registration
+const launchWhatsAppSignup = () => {
+FB.login(fbLoginCallback, {
+config_id: '31602279155865',
+response_type: 'code',
+override_default_response_type: true,
+extras: {
+setup: {
+business: {
+name: 'Wind & Wool',
+email: 'support@windandwool.com',
+website: 'https://windandwool.com/',
+address: {
+streetAddress1: '1 Hacker Way',
+streetAddress2: 'Suite 1',
+city: 'Menlo Park',
+state: 'California',
+zipPostal: '94025',
+country: 'US'
+},
+phone: {
+code: 1,
+number: '6505559999'
+},
+timezone: 'UTC-07:00'
+},
+preVerifiedPhone: {
+ids: [
+'106540352242922'
+]
+},
+phone: {
+displayName: 'Wind & Wool',
+category: 'APPAREL',
+description: 'Bespoke artisan apparel and lifestyle goods from upcoming designers.'
+}
+},
+featureType: '',
+sessionInfoVersion: '3',
+}
+});
+}
+Existing business portfolio, pre-verified number, and display profile
+// Launch method and callback registration
+const launchWhatsAppSignup = () => {
+FB.login(fbLoginCallback, {
+config_id: '31602279155865',
+response_type: 'code',
+override_default_response_type: true,
+extras: {
+setup: {
+business: {
+id: '2729063490586005'
+},
+preVerifiedPhone: {
+ids: [
+'106540352242922'
+]
+},
+phone: {
+displayName: 'Wind & Wool',
+category: 'APPAREL',
+description: 'Bespoke artisan apparel and lifestyle goods from upcoming designers.'
+}
+},
+featureType: '',
+sessionInfoVersion: '3',
+}
+});
+}
+Did you find this page helpful?

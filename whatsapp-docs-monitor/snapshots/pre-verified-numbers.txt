@@ -1,0 +1,673 @@
+WhatsApp Business Platform
+WhatsApp Business Platform
+Business Messaging
+WhatsApp Business Platform
+WhatsApp Business Platform
+Overview
+About the platform
+Access tokens
+Permissions
+Pricing
+Pricing
+Authentication-international rates
+Conversation-based pricing
+AI Providers
+Get started
+Marketing messages
+Overview
+Get started
+Features
+Marketing templates
+Overview
+Custom marketing templates
+Call permission request message template
+Coupon code templates
+Limited-time-offer templates
+Media card carousel templates
+Guides
+Onboarding
+Measure conversions
+Track click events
+View metrics
+Deep links
+Send marketing messages
+Onboard business customers
+Pricing
+Changelog
+Utility messages
+Overview
+Utility templates
+Call permission request templates
+Authentication messages
+Overview
+Authenticating users
+Error signals
+Authentication templates
+One-tap autofill
+Zero-tap
+Copy code
+Bulk management
+Previews
+Service messages
+Overview
+Types of messages
+Address
+Audio
+Contacts
+Document
+Image
+Interactive
+URL button
+List buttons
+Media carousel
+Reply buttons
+Location
+Location request
+Reaction
+Sticker
+Text
+Video
+Calling
+Overview
+Configure call settings
+Business-initiated calls
+User call permissions
+User-initiated calls
+Session Initiation Protocol
+Call button messages and deep links
+Integration patterns
+Integration examples
+Reference
+Troubleshooting
+Calling sandbox account
+App Review guidelines
+Pricing
+FAQ
+Groups
+Overview
+Get started
+Group management
+Group messaging
+Webhooks
+Error codes
+Pricing
+FAQ
+Catalogs
+Overview
+Get started
+Upload inventory
+Set commerce settings
+Share products
+Receiving responses
+Messages
+Catalog link messages
+Catalog messages
+Catalog template messages
+Multi-product messages
+Multi-product template messages
+Product carousel messages
+Product carousel template messages
+Single-product messages
+Single-product template messages
+Partners
+Overview
+Become a partner
+Become a Tech Provider
+Become a Solution Partner
+Become a Measurement Partner
+Upgrade to Tech Partner
+App Review
+Embedded Signup
+Overview
+Implementation
+Onboarding for Tech Providers
+Onboarding for Solution Partners
+Cloud API flow
+Custom flows
+Pre-filling screens
+Pre-verified phone numbers
+Bypassing phone number screens
+Making website optional
+App-only install
+Hosted ES
+Automatic Events
+Versions
+v4
+v3
+v3 public preview
+v2 public preview
+Errors
+Onboard Business app users (Coexistence)
+Partner-initiated WABA creation
+Multi-Partner Solutions
+Overview
+Embedded Creation
+Migrate WABAs among solutions via Embedded Signup
+Migrate WABAs among solutions via Meta Business Suite
+Migrate WABAs among partners via Embedded Signup
+Migrating customers off solutions via Embedded Signup
+Migrating customers off solutions via Meta Business Suite
+Add WABAs to a Multi-Partner Solution
+Multi-Solution Conversations
+Partner-led business verification
+Pixel tracking
+Manage customer assets
+WhatsApp Business Accounts
+Phone numbers
+Overview
+Registering phone numbers via API
+System users
+Credit lines
+Webhooks
+Partner support
+Support
+Migrate numbers among partners via Embedded Signup
+Migrate numbers among partners programmatically
+Business customer support
+OBO model deprecation
+Webhooks
+Overview
+Create a webhook endpoint
+Create a test webhook endpoint
+Override the callback URL
+Webhooks reference
+account_alerts
+account_review_update
+account_update
+business_capability_update
+history
+message_template_components_update
+message_template_quality_update
+message_template_status_update
+messages
+Overview
+audio messages
+button messages
+contacts messages
+document messages
+edit messages
+errors messages
+group messages
+image messages
+interactive messages
+location messages
+order messages
+reaction messages
+revoke messages
+status messages
+sticker messages
+system messages
+text messages
+unsupported messages
+video messages
+partner_solutions
+payment_configuration_update
+phone_number_name_update
+phone_number_quality_update
+security
+smb_app_state_sync
+smb_message_echoes
+template_category_update
+user_preferences
+Template fundamentals
+Overview
+Components
+Languages
+Categorization
+Comparison
+Library
+Archival
+Management
+Overview
+Migration
+Configure time-to-live
+Tap target URL title override
+Quality and delivery
+Quality rating
+Review
+Pausing
+Business portfolio pacing
+Template pacing
+Messaging limits
+Upcoming changes to messaging limits
+Per-user marketing template limits
+Messaging features
+Media
+Read receipts
+Contextual replies
+Typing indicators
+Link previews
+Throughput
+Account assets
+Business phone numbers
+Overview
+Register a phone number
+Two-step verification
+Conversational components
+Business-scoped user IDs
+Business profiles
+Display names
+Official Business Accounts
+WhatsApp Business Accounts
+QR codes and message links
+Timezone IDs
+Analytics
+Ads that click to WhatsApp
+Welcome message sequences
+Payments
+Payments India
+Overview
+Onboarding APIs
+UPI Intent
+Dynamic VPA
+Cashfree
+Billdesk
+CCAvenue
+Payment links
+Enhanced payment links
+Payment gateway
+Order details templates
+Order status templates
+Checkout button templates
+Payments Brazil
+Overview
+Orders
+Pix
+Payment links
+Boleto
+One-click payments
+Order details templates
+Payment request CTA templates
+Data, Privacy, & Policy
+Policy enforcement
+Violations
+Blocking users
+Data privacy & security
+Local storage
+No storage
+Obtaining user opt-in
+User identity changes
+Support
+Support
+API status page
+Health status
+Load testing
+Experiments
+Use an existing WhatsApp number
+Resources
+API Reference
+Application
+Application Connected Client Businesses
+Application Solutions API
+Solution Creation API
+Business
+Add Phone Numbers API
+Business Account API
+Client WhatsApp Business Accounts API
+Owned WhatsApp Business Accounts
+WhatsApp Business Accounts API
+WhatsApp Business Partner Onboarding to MM Lite API
+WhatsApp Business Pre-Verified Phone Number Sharing API
+WhatsApp Business Pre-Verified Phone Numbers API
+Groups
+Groups Invite Link API
+Groups Join Requests API
+Groups Participants API
+Groups Query API
+Media
+Media API
+Media Download API
+Message History
+WhatsApp Business Message History Events API
+User
+Assigned WhatsApp Business Accounts API
+Webhooks
+WhatsApp Incoming Webhook Payload
+WhatsApp Account Number
+WhatsApp Account Number API
+WhatsApp Business Account
+Assigned Users Management API
+Conversational Automation API
+Extended Credits API
+Phone Number Management API
+Schedules API
+Subscribed Apps API
+Template API
+WhatsApp Business Account API
+WhatsApp Business Account Activities API
+WhatsApp Business Account Solutions List API
+WhatsApp Business Account Migration Intent
+Migration Intent Details API
+WhatsApp Business Bot
+Bot Details API
+WhatsApp Business Phone Number
+Block API
+Business Compliance Information API
+Business Encryption API
+Calling API
+Commerce Settings API
+Groups Management API
+Marketing Messages Lite API
+Media Upload API
+Message API
+Phone Number Deregister API
+Phone Number Registration
+Phone Number Verification Request Code API
+Settings API
+Verify Code API
+WhatsApp Business Account Official Business Account Status API
+WhatsApp Business Account Phone Number API
+WhatsApp Business Profile API
+WhatsApp Business QR Code API
+WhatsApp Business QR Code Management API
+WhatsApp Business Pre Verified Phone Number
+Request Verification Code API
+Verify Code API
+WhatsApp Business Pre-Verified Phone Number API
+WhatsApp Business Pre-Verified Phone Number Partners API
+WhatsApp Business Profile
+WhatsApp Business Profile Node API
+WhatsApp Business Solution
+Accept Deactivation Request API
+Access Token API
+Reject Deactivation Request API
+Send Deactivation Request API
+Solution Accept API
+Solution Details API
+Solution Reject API
+Changelog
+Error codes
+Pre-verified phone numbers
+Updated
+:
+Dec 12, 2025
+This document explains how to offer your business customers pre-verified business phone numbers. Pre-verified business phone numbers are WhatsApp business phone numbers that have already been verified by you, eliminating the need for customers to have to contact you for a one-time password.
+Note that pre-verified business phone numbers are represented by
+WhatsApp Business Pre-Verified Phone Number
+objects, which are
+temporary
+. When a business customer selects one of these numbers and completes the Embedded Signup flow, the temporary object will be replaced by a valid
+WhatsApp Business Phone Number
+object. You must
+get this new object’s ID
+and use it to
+register the number
+within 90 days.
+Requirements
+Your business must be an approved Solution Partner.
+The app user must be a business admin on the business account that pre-verified business phone numbers are added to.
+A
+User
+or
+System User access token
+.
+The
+business_management
+permission.
+Business phone numbers
+must be valid
+.
+Limitations
+You are responsible for keeping track of who has claimed a pre-verified business phone number.
+If a pre-verified business phone number is not claimed by an end client in the Embedded Signup flow within 90 days of verification, the number will revert to an unverified status and must be verified again to have its status restored for another 90 days.
+Unclaimed pre-verified business phone numbers can’t be re-verified until 45 days before they are scheduled to revert to an unverified status. This time is indicated by the
+verification_expiry_time
+field
+.
+If you add a phone number to your pool of pre-verified business phone numbers (Step 1) but do not verify it within 90 days (Step 3), it will be removed from your pool and you will have to add it again.
+Once a business customer claims a pre-verified business phone number, you have 90 days to register it.
+Creating pre-verified numbers
+Follow these steps to create a pre-verified business phone number, surface it in Embedded Signup, and register it after it has been claimed by a business customer.
+Step 1: Create a pre-verified business phone number
+Use the
+Add Phone Numbers API
+to add a pre-verified business phone number to your business portfolio’s pool of business phone numbers.
+Request Syntax
+POST /<BUSINESS_PORTFOLIO_ID>/add_phone_numbers
+?phone_number=<PHONE_NUMBER>
+Response
+Upon success, the API will return a
+WhatsApp Business Pre-Verified Phone Number
+ID. Capture this value for use in the next request.
+{
+"id": "<WHATSAPP_BUSINESS_PRE_VERIFIED_PHONE_NUMBER_ID>"
+}
+Sample Request
+curl -X POST 'https://graph.facebook.com/
+v25.0
+/506914307656634/add_phone_numbers?phone_number=15550783881' \
+-H 'Authorization: Bearer EAAJB...'
+Sample Response
+{
+"id": "106540352242922"
+}
+Step 2: Request a verification code
+Use the
+Request Verification Code API
+to request a one-time-password over SMS or voice for the newly created pre-verified business phone number.
+Request Syntax
+POST /<WHATSAPP_BUSINESS_PRE_VERIFIED_PHONE_NUMBER_ID>/request_code
+?code_method=<CODE_METHOD>
+&language=<LANGUAGE>
+Response
+Upon success, the API will return
+true
+.
+{
+"success": <SUCCESS>
+}
+In addition, we will send an SMS or voice message containing a one-time-password to the phone number. Capture the one-time-password for use in the next request.
+One-Time-Password SMS Syntax
+WhatsApp code <CODE>
+One-Time-Password Voice Message Syntax
+Repeated three times.
+Verification code is <CODE>
+Sample Request
+curl -X POST 'https://graph.facebook.com/
+v25.0
+/106540352242922/request_code?code_method=SMS&language=en_US' \
+-H 'Authorization: Bearer EAAJB...'
+Sample Response
+{
+"success": true
+}
+Sample One-Time-Password SMS Message
+WhatsApp code 123-456
+Sample One-Time-Password Voice Message
+Repeated three times.
+Verification code is 123456
+Step 3: Verify the number
+Use the
+Verify Code API
+to verify the number using its one-time-password.
+Request Syntax
+POST /<WHATSAPP_BUSINESS_PRE_VERIFIED_PHONE_NUMBER_ID>/verify_code
+?code=<CODE>
+Response
+Upon success, the API will return
+true
+and the number will have its
+code_verification_status
+set to
+VERIFIED
+for 90 days.
+{
+"success": <SUCCESS>
+}
+Sample Request
+curl -X POST 'https://graph.facebook.com/
+v25.0
+/106540352242922/verify_code?code=123456' \
+-H 'Authorization: Bearer EAAJB...'
+Sample Response
+{
+"success": true
+}
+Once you have a pre-verified business phone number with a verified status (or a set of such numbers), display them in the new Embedded Signup flow.
+Displaying pre-verified numbers in Embedded Signup
+You can display pre-verified business phone numbers in the Embedded Signup flow using
+pre-filled form data
+. To do this, add a
+preVerifiedPhone
+object with an
+ids
+property to the
+setup
+object and assign the IDs of your pre-verified business phone numbers as an array of strings to the
+ids
+property:
+{
+scope: "<SCOPE>",
+extras: {
+feature: "<FEATURE>",
+setup: {
+preVerifiedPhone: {
+ids: [<IDS>]
+}
+}
+}
+}
+For example:
+{
+scope: "business_management,whatsapp_business_management",
+extras: {
+feature: "whatsapp_embedded_signup",
+version: 2,
+setup: {
+business: {
+name: "Acme Inc.",
+email: "johndoe@acme.com",
+phone: {
+code: 1,
+number: "6505551234"
+},
+website: "https://www.acme.com",
+address: {
+streetAddress1: "1 Acme Way",
+city: "Acme Town",
+state: "CA",
+zipPostal: "94000",
+country: "US"
+},
+timezone: "UTC-08:00"
+},
+phone: {
+displayName: "Acme Inc.",
+category: "ENTERTAIN",
+description: "Gears and widgets"
+},
+preVerifiedPhone: {
+ids: ["106540352242922","105954558954427"]
+}
+}
+}
+}
+Note that if a pre-verified business phone number with a status of
+VERIFIED
+is not claimed within 90 days of verification, its status will be set to
+UNVERIFIED
+but it will still appear in the Embedded Signup flow. If a business customer attempts to claim an unverified number, they must complete verification on their own, which means they must request a one-time password from you.
+To prevent this experience,
+we recommend that you keep track of when you verified a number and re-verify it before it reverts to an unverified state.
+If you don’t know when you last verified a given pre-verified business phone number, request the
+code_verification_time
+and
+verification_expiry_time
+fields on the pre-verified business phone number ID. These fields indicate its most recent verification time and its verification expiration time.
+Determining if a number has been claimed through Embedded Signup
+See
+Getting claimed phone number IDs
+.
+Getting and registering claimed phone numbers
+Once a business customer claims a pre-verified business phone number, it will be replaced with a verified WhatsApp business phone number (a
+WhatsApp Business Phone Number
+object  with a
+code_verification_status
+set to
+VERIFIED
+).
+You will have 90 days to
+register this number
+using its ID. If you do not register it within this time frame, it will revert to an
+UNVERIFIED
+status and you will have to
+request a new verification code
+and use the code to
+verify the WhatsApp business phone number
+again.
+Getting claimed numbers via session logging
+If you are using
+session logging
+, the ID will be returned in a message event and captured by your event listener. Send this ID to your server and then use it to register the WhatsApp business phone number.
+Getting claimed numbers via API
+If you are not using session logging, use the
+Phone Numbers API
+to get a list of WhatsApp business phone numbers on the WhatsApp Business Account.
+Parse for the
+display_phone_number
+property on each object returned in the result set. If an object in the result set has a
+display_phone_number
+value that matches a number you used to create a pre-verified business phone number, the object represents the WhatsApp business phone number that has replaced the pre-verified business phone number. Copy this object’s ID and use it to register the WhatsApp business phone number.
+Alternatively, you can use the same endpoint with
+field
+expansion to request the
+display_phone_number
+field and specify the display phone number. For example:
+GET /102290129340398/phone_numbers?display_phone_number=16505551234
+Get pre-verified business phone numbers
+Use the
+Preverified Numbers API
+to get a list of all
+WhatsApp Business Pre-Verified Phone Number
+objects, regardless of their verification status, in your business account’s pool of pre-verified business phone numbers:
+GET /<BUSINESS_ACCOUNT_ID>/preverified_numbers
+Results are automatically sorted in order of creation time. You can also use field expansion to request the
+code_verification_status
+field to have the API only return pre-verified business phone numbers with the indicated verification state:
+GET /<BUSINESS_ACCOUNT_ID>/preverified_numbers?code_verification_status=VERIFIED
+Sharing and unsharing pre-verified numbers
+Use the
+Share Preverified Numbers API
+to share pre-verified business phone numbers with a
+multi-partner solution
+you are a part of, or a DELETE request to the same endpoint to unshare them.
+Shared pre-verified business phone numbers can be surfaced by partners of a solution in their implementation of Embedded Signup.
+If you are sharing numbers with multiple business partners, we recommend that you advise your partners to
+get a list of shared pre-verified numbers
+before surfacing them in Embedded Signup. This reduces the likelihood of a partner attempting to surface a number that has already been claimed (claimed numbers do not appear in the flow, but the partner might not know this and wonder why it’s not appearing).
+Sharing Request Syntax
+POST /<BUSINESS_ID>/share_preverified_numbers
+?partner_business_id=<PARTNER_BUSINESS_ID>
+&preverified_id=<PREVERIFIED_ID>
+Unsharing Request Syntax
+DELETE /<BUSINESS_ID>/share_preverified_numbers
+?partner_business_id=<PARTNER_BUSINESS_ID>
+&preverified_id=<PREVERIFIED_ID>
+Response
+Upon success, the API will return true. If sharing, notify your business partner of the newly shared pre-verified number and provide them with the number’s ID. If unsharing, the number will no longer appear in the partner’s implementation of Embedded Signup.
+{
+"success": <SUCCESS>
+}
+Example Sharing Request
+curl -X POST 'https://graph.facebook.com/v17.0/share_preverified_numbers?partner_business_id=506914307656634&preverified_id=1706193509821738' \
+-H 'Authorization: Bearer EAAH0...'
+Example Unsharing Request
+curl -X DELETE 'https://graph.facebook.com/v17.0/share_preverified_numbers?partner_business_id=506914307656634&preverified_id=1706193509821738' \
+-H 'Authorization: Bearer EAAH0...'
+Example Response
+{
+"success": true
+}
+Registering pre-verified numbers programmatically
+If you have customized Embedded Signup to
+bypass the phone number addition screen
+, you can register pre-verified business phone numbers on an onboarded business customer’s WhatsApp Business Account programmatically. To do this, first complete all of the steps to
+create a pre-verified number
+, then use the pre-verified number ID to complete
+Step 1
+and
+Step 4
+in the
+Register Phone Numbers
+document.
+Did you find this page helpful?

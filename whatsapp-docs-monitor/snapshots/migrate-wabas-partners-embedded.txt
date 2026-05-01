@@ -1,0 +1,466 @@
+WhatsApp Business Platform
+WhatsApp Business Platform
+Business Messaging
+WhatsApp Business Platform
+WhatsApp Business Platform
+Overview
+About the platform
+Access tokens
+Permissions
+Pricing
+Pricing
+Authentication-international rates
+Conversation-based pricing
+AI Providers
+Get started
+Marketing messages
+Overview
+Get started
+Features
+Marketing templates
+Overview
+Custom marketing templates
+Call permission request message template
+Coupon code templates
+Limited-time-offer templates
+Media card carousel templates
+Guides
+Onboarding
+Measure conversions
+Track click events
+View metrics
+Deep links
+Send marketing messages
+Onboard business customers
+Pricing
+Changelog
+Utility messages
+Overview
+Utility templates
+Call permission request templates
+Authentication messages
+Overview
+Authenticating users
+Error signals
+Authentication templates
+One-tap autofill
+Zero-tap
+Copy code
+Bulk management
+Previews
+Service messages
+Overview
+Types of messages
+Address
+Audio
+Contacts
+Document
+Image
+Interactive
+URL button
+List buttons
+Media carousel
+Reply buttons
+Location
+Location request
+Reaction
+Sticker
+Text
+Video
+Calling
+Overview
+Configure call settings
+Business-initiated calls
+User call permissions
+User-initiated calls
+Session Initiation Protocol
+Call button messages and deep links
+Integration patterns
+Integration examples
+Reference
+Troubleshooting
+Calling sandbox account
+App Review guidelines
+Pricing
+FAQ
+Groups
+Overview
+Get started
+Group management
+Group messaging
+Webhooks
+Error codes
+Pricing
+FAQ
+Catalogs
+Overview
+Get started
+Upload inventory
+Set commerce settings
+Share products
+Receiving responses
+Messages
+Catalog link messages
+Catalog messages
+Catalog template messages
+Multi-product messages
+Multi-product template messages
+Product carousel messages
+Product carousel template messages
+Single-product messages
+Single-product template messages
+Partners
+Overview
+Become a partner
+Become a Tech Provider
+Become a Solution Partner
+Become a Measurement Partner
+Upgrade to Tech Partner
+App Review
+Embedded Signup
+Overview
+Implementation
+Onboarding for Tech Providers
+Onboarding for Solution Partners
+Cloud API flow
+Custom flows
+Pre-filling screens
+Pre-verified phone numbers
+Bypassing phone number screens
+Making website optional
+App-only install
+Hosted ES
+Automatic Events
+Versions
+v4
+v3
+v3 public preview
+v2 public preview
+Errors
+Onboard Business app users (Coexistence)
+Partner-initiated WABA creation
+Multi-Partner Solutions
+Overview
+Embedded Creation
+Migrate WABAs among solutions via Embedded Signup
+Migrate WABAs among solutions via Meta Business Suite
+Migrate WABAs among partners via Embedded Signup
+Migrating customers off solutions via Embedded Signup
+Migrating customers off solutions via Meta Business Suite
+Add WABAs to a Multi-Partner Solution
+Multi-Solution Conversations
+Partner-led business verification
+Pixel tracking
+Manage customer assets
+WhatsApp Business Accounts
+Phone numbers
+Overview
+Registering phone numbers via API
+System users
+Credit lines
+Webhooks
+Partner support
+Support
+Migrate numbers among partners via Embedded Signup
+Migrate numbers among partners programmatically
+Business customer support
+OBO model deprecation
+Webhooks
+Overview
+Create a webhook endpoint
+Create a test webhook endpoint
+Override the callback URL
+Webhooks reference
+account_alerts
+account_review_update
+account_update
+business_capability_update
+history
+message_template_components_update
+message_template_quality_update
+message_template_status_update
+messages
+Overview
+audio messages
+button messages
+contacts messages
+document messages
+edit messages
+errors messages
+group messages
+image messages
+interactive messages
+location messages
+order messages
+reaction messages
+revoke messages
+status messages
+sticker messages
+system messages
+text messages
+unsupported messages
+video messages
+partner_solutions
+payment_configuration_update
+phone_number_name_update
+phone_number_quality_update
+security
+smb_app_state_sync
+smb_message_echoes
+template_category_update
+user_preferences
+Template fundamentals
+Overview
+Components
+Languages
+Categorization
+Comparison
+Library
+Archival
+Management
+Overview
+Migration
+Configure time-to-live
+Tap target URL title override
+Quality and delivery
+Quality rating
+Review
+Pausing
+Business portfolio pacing
+Template pacing
+Messaging limits
+Upcoming changes to messaging limits
+Per-user marketing template limits
+Messaging features
+Media
+Read receipts
+Contextual replies
+Typing indicators
+Link previews
+Throughput
+Account assets
+Business phone numbers
+Overview
+Register a phone number
+Two-step verification
+Conversational components
+Business-scoped user IDs
+Business profiles
+Display names
+Official Business Accounts
+WhatsApp Business Accounts
+QR codes and message links
+Timezone IDs
+Analytics
+Ads that click to WhatsApp
+Welcome message sequences
+Payments
+Payments India
+Overview
+Onboarding APIs
+UPI Intent
+Dynamic VPA
+Cashfree
+Billdesk
+CCAvenue
+Payment links
+Enhanced payment links
+Payment gateway
+Order details templates
+Order status templates
+Checkout button templates
+Payments Brazil
+Overview
+Orders
+Pix
+Payment links
+Boleto
+One-click payments
+Order details templates
+Payment request CTA templates
+Data, Privacy, & Policy
+Policy enforcement
+Violations
+Blocking users
+Data privacy & security
+Local storage
+No storage
+Obtaining user opt-in
+User identity changes
+Support
+Support
+API status page
+Health status
+Load testing
+Experiments
+Use an existing WhatsApp number
+Resources
+API Reference
+Application
+Application Connected Client Businesses
+Application Solutions API
+Solution Creation API
+Business
+Add Phone Numbers API
+Business Account API
+Client WhatsApp Business Accounts API
+Owned WhatsApp Business Accounts
+WhatsApp Business Accounts API
+WhatsApp Business Partner Onboarding to MM Lite API
+WhatsApp Business Pre-Verified Phone Number Sharing API
+WhatsApp Business Pre-Verified Phone Numbers API
+Groups
+Groups Invite Link API
+Groups Join Requests API
+Groups Participants API
+Groups Query API
+Media
+Media API
+Media Download API
+Message History
+WhatsApp Business Message History Events API
+User
+Assigned WhatsApp Business Accounts API
+Webhooks
+WhatsApp Incoming Webhook Payload
+WhatsApp Account Number
+WhatsApp Account Number API
+WhatsApp Business Account
+Assigned Users Management API
+Conversational Automation API
+Extended Credits API
+Phone Number Management API
+Schedules API
+Subscribed Apps API
+Template API
+WhatsApp Business Account API
+WhatsApp Business Account Activities API
+WhatsApp Business Account Solutions List API
+WhatsApp Business Account Migration Intent
+Migration Intent Details API
+WhatsApp Business Bot
+Bot Details API
+WhatsApp Business Phone Number
+Block API
+Business Compliance Information API
+Business Encryption API
+Calling API
+Commerce Settings API
+Groups Management API
+Marketing Messages Lite API
+Media Upload API
+Message API
+Phone Number Deregister API
+Phone Number Registration
+Phone Number Verification Request Code API
+Settings API
+Verify Code API
+WhatsApp Business Account Official Business Account Status API
+WhatsApp Business Account Phone Number API
+WhatsApp Business Profile API
+WhatsApp Business QR Code API
+WhatsApp Business QR Code Management API
+WhatsApp Business Pre Verified Phone Number
+Request Verification Code API
+Verify Code API
+WhatsApp Business Pre-Verified Phone Number API
+WhatsApp Business Pre-Verified Phone Number Partners API
+WhatsApp Business Profile
+WhatsApp Business Profile Node API
+WhatsApp Business Solution
+Accept Deactivation Request API
+Access Token API
+Reject Deactivation Request API
+Send Deactivation Request API
+Solution Accept API
+Solution Details API
+Solution Reject API
+Changelog
+Error codes
+Migrating a WABA from one Solution Partner to another via Embedded Signup
+Updated
+:
+Nov 4, 2025
+If you are a Solution Partner, business customers can switch from their current Solution Partner over to you by unsharing their WABA with their current partner and resharing it with you. All business phone numbers and templates associated will continue to work normally once the process is complete.
+Once the customer initiates the process, they will be unable to send messages again until you replace their current credit line with yours. This happens on the 1st of the following month in which you use the API to share your credit line. Note, however, that you cannot use the API to share your credit line (with a customer who has switched partners) the last 3 days or first 4 days of any month. Therefore, to ensure the shortest amount of downtime for customers, advise them to begin the process near the end of the month, but at least 3 days before it ends, so you can perform the API call in the same month.
+Limitations
+Customers must own their WABA. WABAs owned by Solution Partners (the
+On-Behalf-Of model
+) are not supported.
+Once the customer initiates the process, they will be prevented from sending messages until your credit line replaces their current credit line. This happens on the 1st of the month after which you successfully use the API to share your credit line with the customer.
+Your credit line currency must match the customer WABA’s currency at the time of migration.
+You cannot use the API to share your credit line (with a customer who has switched providers) the last 3 days or first 4 days of any month.
+Business phone numbers must be re-registered as part of the process.
+Step 1: Instruct the customer to unshare their WABA
+Instruct the customer to use the Meta Business Suite to unshare their WhatsApp Business Account with their current partner. They can do this by navigating to:
+Business Settings
+>
+Accounts
+(menu section) >
+WhatsApp Accounts
+>
+Partners
+(tab)
+Once in the
+Partners
+tab, they can select their current partner, click the delete icon (trash can), and complete the flow to unshare their WABA.
+You can provide the customer with the following link, which allows them to directly load their business portfolio in the Business Settings panel:
+https://business.facebook.com/settings
+Alternatively, you can direct the customer to the following Help Center article:
+Manage Your WhatsApp Business Solution Provider’s Permissions
+⁠
+Keep in mind that once the customer completes this step, they will be prevented from sending messages until your credit line replaces their current credit line. This happens on the first of the month
+after
+you share your credit line with the customer.
+If the customer attempts to send a message during this period, the API will return error code
+131042
+and a
+messages
+webhook will be sent to their current Solution Partner containing the same code.
+Step 2: Instruct the customer to complete Embedded Signup
+If you do not take action, Meta will move your account to your business portfolio after 90 days. This process will not interrupt your messaging services.
+Direct the customer to your implementation of Embedded Signup. Instruct them to complete the flow and to select their existing WABA when they see the
+This WhatsApp Business account was previously shared
+warning.
+Once they select their existing WABA and proceed, the flow will end, so they do not need to select a business phone number.
+Step 3: Get asset IDs from the session log message event listener
+Capture the customer’s WABA ID and business phone number captured by the
+session log message event listener
+when they complete the flow.
+Note that their business phone number will not be included in the session log via this flow.
+Step 4: Exchange the token code for a business token
+Exchange the token code
+captured by the
+response callback
+for the customer’s
+business token
+.
+Step 5: Add your system user to the customer’s WABA
+If you are using a
+system token
+(which is not recommended) instead of a business token, add your system user to the customer’s WABA using the Business Manager in Meta Business Suite.
+Business Settings
+⁠
+>
+Accounts
+(menu section) >
+WhatsApp Accounts
+> [Customer WABA] >
+People
+(tab) >
+Assign People
+(button)
+Step 6: Share your credit line with the customer
+Share your credit line
+with the customer. This change will not be reflected until the first of the following month. Until then, the customer will continue to share their previous Solution Partner’s credit line, but will be prevented from sending messages.
+On the first of the following month, your credit line will replace the customer’s previous credit line, and the customer can resume messaging.
+Example
+April 20:
+A customer unshares their WABA with their previous Solution Partner. The customer is now prevented from messaging.
+April 21:
+The customer completes your implementation of Embedded Signup. You capture the customer’s credentials and access token, and share your credit line with them. The previous Solution Partner’s credit line is still shared with the customer, but the customer is still being prevented from messaging.
+May 1:
+Your credit line replaces the customer’s previous credit line. The customer can now send messages again. Any
+billable messages
+sent by the customer will be billed to your credit line.
+Did you find this page helpful?

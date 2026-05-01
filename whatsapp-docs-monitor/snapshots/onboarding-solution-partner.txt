@@ -1,0 +1,676 @@
+WhatsApp Business Platform
+WhatsApp Business Platform
+Business Messaging
+WhatsApp Business Platform
+WhatsApp Business Platform
+Overview
+About the platform
+Access tokens
+Permissions
+Pricing
+Pricing
+Authentication-international rates
+Conversation-based pricing
+AI Providers
+Get started
+Marketing messages
+Overview
+Get started
+Features
+Marketing templates
+Overview
+Custom marketing templates
+Call permission request message template
+Coupon code templates
+Limited-time-offer templates
+Media card carousel templates
+Guides
+Onboarding
+Measure conversions
+Track click events
+View metrics
+Deep links
+Send marketing messages
+Onboard business customers
+Pricing
+Changelog
+Utility messages
+Overview
+Utility templates
+Call permission request templates
+Authentication messages
+Overview
+Authenticating users
+Error signals
+Authentication templates
+One-tap autofill
+Zero-tap
+Copy code
+Bulk management
+Previews
+Service messages
+Overview
+Types of messages
+Address
+Audio
+Contacts
+Document
+Image
+Interactive
+URL button
+List buttons
+Media carousel
+Reply buttons
+Location
+Location request
+Reaction
+Sticker
+Text
+Video
+Calling
+Overview
+Configure call settings
+Business-initiated calls
+User call permissions
+User-initiated calls
+Session Initiation Protocol
+Call button messages and deep links
+Integration patterns
+Integration examples
+Reference
+Troubleshooting
+Calling sandbox account
+App Review guidelines
+Pricing
+FAQ
+Groups
+Overview
+Get started
+Group management
+Group messaging
+Webhooks
+Error codes
+Pricing
+FAQ
+Catalogs
+Overview
+Get started
+Upload inventory
+Set commerce settings
+Share products
+Receiving responses
+Messages
+Catalog link messages
+Catalog messages
+Catalog template messages
+Multi-product messages
+Multi-product template messages
+Product carousel messages
+Product carousel template messages
+Single-product messages
+Single-product template messages
+Partners
+Overview
+Become a partner
+Become a Tech Provider
+Become a Solution Partner
+Become a Measurement Partner
+Upgrade to Tech Partner
+App Review
+Embedded Signup
+Overview
+Implementation
+Onboarding for Tech Providers
+Onboarding for Solution Partners
+Cloud API flow
+Custom flows
+Pre-filling screens
+Pre-verified phone numbers
+Bypassing phone number screens
+Making website optional
+App-only install
+Hosted ES
+Automatic Events
+Versions
+v4
+v3
+v3 public preview
+v2 public preview
+Errors
+Onboard Business app users (Coexistence)
+Partner-initiated WABA creation
+Multi-Partner Solutions
+Overview
+Embedded Creation
+Migrate WABAs among solutions via Embedded Signup
+Migrate WABAs among solutions via Meta Business Suite
+Migrate WABAs among partners via Embedded Signup
+Migrating customers off solutions via Embedded Signup
+Migrating customers off solutions via Meta Business Suite
+Add WABAs to a Multi-Partner Solution
+Multi-Solution Conversations
+Partner-led business verification
+Pixel tracking
+Manage customer assets
+WhatsApp Business Accounts
+Phone numbers
+Overview
+Registering phone numbers via API
+System users
+Credit lines
+Webhooks
+Partner support
+Support
+Migrate numbers among partners via Embedded Signup
+Migrate numbers among partners programmatically
+Business customer support
+OBO model deprecation
+Webhooks
+Overview
+Create a webhook endpoint
+Create a test webhook endpoint
+Override the callback URL
+Webhooks reference
+account_alerts
+account_review_update
+account_update
+business_capability_update
+history
+message_template_components_update
+message_template_quality_update
+message_template_status_update
+messages
+Overview
+audio messages
+button messages
+contacts messages
+document messages
+edit messages
+errors messages
+group messages
+image messages
+interactive messages
+location messages
+order messages
+reaction messages
+revoke messages
+status messages
+sticker messages
+system messages
+text messages
+unsupported messages
+video messages
+partner_solutions
+payment_configuration_update
+phone_number_name_update
+phone_number_quality_update
+security
+smb_app_state_sync
+smb_message_echoes
+template_category_update
+user_preferences
+Template fundamentals
+Overview
+Components
+Languages
+Categorization
+Comparison
+Library
+Archival
+Management
+Overview
+Migration
+Configure time-to-live
+Tap target URL title override
+Quality and delivery
+Quality rating
+Review
+Pausing
+Business portfolio pacing
+Template pacing
+Messaging limits
+Upcoming changes to messaging limits
+Per-user marketing template limits
+Messaging features
+Media
+Read receipts
+Contextual replies
+Typing indicators
+Link previews
+Throughput
+Account assets
+Business phone numbers
+Overview
+Register a phone number
+Two-step verification
+Conversational components
+Business-scoped user IDs
+Business profiles
+Display names
+Official Business Accounts
+WhatsApp Business Accounts
+QR codes and message links
+Timezone IDs
+Analytics
+Ads that click to WhatsApp
+Welcome message sequences
+Payments
+Payments India
+Overview
+Onboarding APIs
+UPI Intent
+Dynamic VPA
+Cashfree
+Billdesk
+CCAvenue
+Payment links
+Enhanced payment links
+Payment gateway
+Order details templates
+Order status templates
+Checkout button templates
+Payments Brazil
+Overview
+Orders
+Pix
+Payment links
+Boleto
+One-click payments
+Order details templates
+Payment request CTA templates
+Data, Privacy, & Policy
+Policy enforcement
+Violations
+Blocking users
+Data privacy & security
+Local storage
+No storage
+Obtaining user opt-in
+User identity changes
+Support
+Support
+API status page
+Health status
+Load testing
+Experiments
+Use an existing WhatsApp number
+Resources
+API Reference
+Application
+Application Connected Client Businesses
+Application Solutions API
+Solution Creation API
+Business
+Add Phone Numbers API
+Business Account API
+Client WhatsApp Business Accounts API
+Owned WhatsApp Business Accounts
+WhatsApp Business Accounts API
+WhatsApp Business Partner Onboarding to MM Lite API
+WhatsApp Business Pre-Verified Phone Number Sharing API
+WhatsApp Business Pre-Verified Phone Numbers API
+Groups
+Groups Invite Link API
+Groups Join Requests API
+Groups Participants API
+Groups Query API
+Media
+Media API
+Media Download API
+Message History
+WhatsApp Business Message History Events API
+User
+Assigned WhatsApp Business Accounts API
+Webhooks
+WhatsApp Incoming Webhook Payload
+WhatsApp Account Number
+WhatsApp Account Number API
+WhatsApp Business Account
+Assigned Users Management API
+Conversational Automation API
+Extended Credits API
+Phone Number Management API
+Schedules API
+Subscribed Apps API
+Template API
+WhatsApp Business Account API
+WhatsApp Business Account Activities API
+WhatsApp Business Account Solutions List API
+WhatsApp Business Account Migration Intent
+Migration Intent Details API
+WhatsApp Business Bot
+Bot Details API
+WhatsApp Business Phone Number
+Block API
+Business Compliance Information API
+Business Encryption API
+Calling API
+Commerce Settings API
+Groups Management API
+Marketing Messages Lite API
+Media Upload API
+Message API
+Phone Number Deregister API
+Phone Number Registration
+Phone Number Verification Request Code API
+Settings API
+Verify Code API
+WhatsApp Business Account Official Business Account Status API
+WhatsApp Business Account Phone Number API
+WhatsApp Business Profile API
+WhatsApp Business QR Code API
+WhatsApp Business QR Code Management API
+WhatsApp Business Pre Verified Phone Number
+Request Verification Code API
+Verify Code API
+WhatsApp Business Pre-Verified Phone Number API
+WhatsApp Business Pre-Verified Phone Number Partners API
+WhatsApp Business Profile
+WhatsApp Business Profile Node API
+WhatsApp Business Solution
+Accept Deactivation Request API
+Access Token API
+Reject Deactivation Request API
+Send Deactivation Request API
+Solution Accept API
+Solution Details API
+Solution Reject API
+Changelog
+Error codes
+Onboarding business customers as a Solution Partner
+Updated
+:
+Nov 14, 2025
+This document describes the steps Solution Partners must perform to onboard new business customers who have completed the Embedded Signup flow.
+If you are a Solution Partner, any business customer who completes your implementation of the Embedded Signup flow will not be able to use your app to access their WhatsApp assets or send and receive messages until you complete these steps.
+What you will need
+the business customer’s WABA ID (returned via
+session logging
+or
+API request
+)
+the business customer’s business phone number ID (returned via
+session logging
+or
+API request
+)
+your app ID (displayed at the top of the
+App Dashboard
+)
+your app secret (displayed in the
+App Dashboard
+>
+App settings
+>
+Basic
+panel)
+your credit line ID (displayed in
+Business Manager
+>
+Business Settings
+>
+Business Info
+or returned via
+API request
+)
+your
+system user access token
+(“system token”)
+Also, if you wish to test messaging capabilities using the customer’s business phone number, you will need a WhatsApp phone number that can already send and receive messages from other WhatsApp numbers.
+Perform all of the requests described below using server-to-server requests. Do not use client-side requests.
+Step 1: Exchange the token code for a business token
+Use the
+Access Token API
+to exchange the token code
+returned
+by Embedded Signup for a business integration system user access token (“business token”).
+Request
+curl --get 'https://graph.facebook.com/v21.0/oauth/access_token' \
+-d 'client_id=<APP_ID>' \
+-d 'client_secret=<APP_SECRET>' \
+-d 'code=<CODE>'
+Request parameters
+Placeholder
+Description
+Example value
+<APP_ID>
+Required.
+Your app ID. This is displayed at the top of the
+App Dashboard
+.
+236484624622562
+<APP_SECRET>
+Required.
+Your app secret. You can get this from the
+App Dashboard
+>
+App Secret
+>
+Basic
+panel.
+614fc2afde15eee07a26b2fe3eaee9b9
+<CODE>
+Required.
+The code
+returned by Embedded Signup
+when the customer successfully completed the flow.
+AQBhlXsctMxJYbwbrpybxlo9tLPGy-QAmjBJA03jxLos43wxlBlrYozY5C33BXJULd133cOJf_5y6EkJZYMrAmW-EMj3Wdap9-NUM2nS4s8tC-ES7slBhh6QpCFM7-SzpI-iqsjqTGyxbUUW3AeaEyLkeZFIkBgcQ_SOxo9HShm20SDR5_n7AT9ZJ5dcgpqBQykNT-pQ8V7Ne9-sr6RLAWtJMF7-Zx6ABudRcWIN53tUTtquDVNuq3lrco4BlVQAv-54tR83Ae0ODN9Uet6j-BVLuetXhQCM3sz9RdgedlbxkidMbkztvYX1j7baOrJxyLyYGWYgbnUrKRQKCtWTsO5ekIGFgtbpS8UPJNqV6j8E5XKPJ8QA7ZFqzkB0s2O__J5FrjHzc_rDo1EuRbw98ihHDzQnvuXeHapEyfhLDJct0A
+Response
+Upon success:
+<BUSINESS_TOKEN>
+Response parameters
+Placeholder
+Description
+Example value
+<BUSINESS_TOKEN>
+The customer’s
+business token
+.
+EAAAN6tcBzAUBOwtDtTfmZCJ9n3FHpSDcDTH86ekf89XnnMZAtaitMUysPDE7LES3CXkA4MmbKCghdQeU1boHr0QZA05SShiILcoUy7ZAb2GE7hrUEpYHKLDuP2sYZCURkZCHGEvEGjScGLHzC4KDm8tq2slt4BsOQE1HHX8DzHahdT51MRDqBw0YaeZByrVFZkVAoVTxXUtuKgDDdrmJQXMnI4jqJYetsZCP1efj5ygGscZBm4OvvuCYB039ZAFlyNn
+Step 2: Subscribe to webhooks on the customer’s WABA
+Use the
+POST /<WABA_ID>/subscribed_apps
+endpoint to subscribe your app to webhooks on the business customer’s WABA. If you want the customer’s webhooks to be sent to a different callback URL than the one set on your app, you have multiple
+webhook override
+options.
+Request
+curl -X POST 'https://graph.facebook.com/<API_VERSION>/<WABA_ID>/subscribed_apps' \
+-H 'Authorization: Bearer <ACCESS_TOKEN>'
+Request parameters
+Placeholder
+Description
+Example value
+<BUSINESS_TOKEN>
+Required.
+The customer’s
+business token
+.
+EAAAN6tcBzAUBOwtDtTfmZCJ9n3FHpSDcDTH86ekf89XnnMZAtaitMUysPDE7LES3CXkA4MmbKCghdQeU1boHr0QZA05SShiILcoUy7ZAb2GE7hrUEpYHKLDuP2sYZCURkZCHGEvEGjScGLHzC4KDm8tq2slt4BsOQE1HHX8DzHahdT51MRDqBw0YaeZByrVFZkVAoVTxXUtuKgDDdrmJQXMnI4jqJYetsZCP1efj5ygGscZBm4OvvuCYB039ZAFlyNn
+<WABA_ID>
+Required.
+The customer’s WABA ID.
+102290129340398
+Response
+Upon success:
+{
+"success": true
+}
+Step 3: Share your credit line with the customer
+We are currently testing new steps for sharing your credit line with onboarded business customers. These steps will eventually replace this step, so if you wish to implement these steps now, see
+Alternate method for sharing your credit line
+.
+Note
+: If you are using the below API i.e.
+whatsapp_credit_sharing_and_attach
+, you would need to add your System User to the shared WhatsApp Business Accounts as a pre-requisite. Please refer to
+this doc for steps
+.
+Once you have added the System user to the WhatsApp Business Account, use the
+Credit Sharing API
+to share your credit line with an onboarded business customer.
+Request
+curl -X POST 'https://graph.facebook.com/<API_VERSION>/<EXTENDED_CREDIT_LINE_ID>/whatsapp_credit_sharing_and_attach?waba_currency=<CUSTOMER_BUSINESS_CURRENCY>&waba_id=<CUSTOMER_WABA_ID>' \
+-H 'Authorization: Bearer <SYSTEM_TOKEN>'
+Request parameters
+Placeholder
+Description
+Example value
+<CUSTOMER_BUSINESS_CURRENCY>
+Required.
+The business’s currency, as a three-letter currency code. Support values are:
+AUD
+EUR
+GBP
+IDR
+INR
+USD
+This currency is used for invoicing and corresponds to
+pricing
+rates.
+USD
+<CUSTOMER_WABA_ID>
+Required.
+The customer’s WABA ID.
+102290129340398
+<EXTENDED_CREDIT_LINE_ID>
+Required.
+Your extended credit line ID.
+1972385232742146
+<SYSTEM_TOKEN>
+Required.
+Your system token.
+EAAAN6tcBzAUBOZC82CW7iR2LiaZBwUHS4Y7FDtQxRUPy1PHZClDGZBZCgWdrTisgMjpFKiZAi1FBBQNO2IqZBAzdZAA16lmUs0XgRcCf6z1LLxQCgLXDEpg80d41UZBt1FKJZCqJFcTYXJvSMeHLvOdZwFyZBrV9ZPHZASSqxDZBUZASyFdzjiy2A1sippEsF4DVV5W2IlkOSr2LrMLuYoNMYBy8xQczzOKDOMccqHEZD
+Response
+Upon success:
+{
+"allocation_config_id": "<ALLOCATION_CONFIGURATION_ID>",
+"waba_id": "<CUSTOMER_WABA_ID>"
+}
+Response parameters
+Placeholder
+Description
+Example value
+<ALLOCATION_CONFIGURATION_ID>
+The extended credit line’s allocation configuration ID.
+Save this ID if you want to
+verify
+that your credit line has been shared with the customer.
+58501441721238
+<CUSTOMER_WABA_ID>
+The customer’s WABA ID.
+102290129340398
+Step 4: Register the customer’s phone number
+Use the
+Register API
+to register the customer’s business phone number for use with Cloud API.
+Request
+curl 'https://graph.facebook.com/v21.0/<BUSINESS_PHONE_NUMBER_ID>/register' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer <BUSINESS_TOKEN>' \
+-d '
+{
+"messaging_product": "whatsapp",
+"pin": "<DESIRED_PIN>"
+}'
+Request parameters
+Placeholder
+Description
+Example value
+<BUSINESS_PHONE_NUMBER_ID>
+Required.
+The customer’s business phone number ID returned.
+106540352242922
+<BUSINESS_TOKEN>
+Required.
+The customer’s business token.
+EAAAN6tcBzAUBOwtDtTfmZCJ9n3FHpSDcDTH86ekf89XnnMZAtaitMUysPDE7LES3CXkA4MmbKCghdQeU1boHr0QZA05SShiILcoUy7ZAb2GE7hrUEpYHKLDuP2sYZCURkZCHGEvEGjScGLHzC4KDm8tq2slt4BsOQE1HHX8DzHahdT51MRDqBw0YaeZByrVFZkVAoVTxXUtuKgDDdrmJQXMnI4jqJYetsZCP1efj5ygGscZBm4OvvuCYB039ZAFlyNn
+<DESIRED_PIN>
+Required.
+Set this value to a 6-digit number. This will be the business phone number’s two-step verification PIN.
+581063
+Response
+Upon success:
+{
+"success": true
+}
+Step 5: Send a test message
+This step is optional.
+If you wish to test the messaging capabilities of your business customer’s business phone number, send a message to the customer’s number from your own WhatsApp number (this will open a
+customer service window
+, allowing you to respond with any type of message).
+Next, use the
+Messages API
+to send a text message in response.
+Request
+curl 'https://graph.facebook.com/v21.0/<BUSINESS_PHONE_NUMBER_ID>/messages' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer <BUSINESS_TOKEN>' \
+-d '
+{
+"messaging_product": "whatsapp",
+"recipient_type": "individual",
+"to": "<WHATSAPP_USER_NUMBER>",
+"type": "text",
+"text": {
+"body": "<BODY_TEXT>"
+}
+}'
+Request parameters
+Placeholder
+Description
+Example value
+<BODY_TEXT>
+Required.
+Message body text. Supports URLs.
+Maximum 4096 characters.
+Message received, loud and clear!
+<BUSINESS_PHONE_NUMBER_ID>
+Required.
+The customer’s business phone number ID.
+106540352242922
+<BUSINESS_TOKEN>
+Required.
+The customer’s business token.
+EAAAN6tcBzAUBOwtDtTfmZCJ9n3FHpSDcDTH86ekf89XnnMZAtaitMUysPDE7LES3CXkA4MmbKCghdQeU1boHr0QZA05SShiILcoUy7ZAb2GE7hrUEpYHKLDuP2sYZCURkZCHGEvEGjScGLHzC4KDm8tq2slt4BsOQE1HHX8DzHahdT51MRDqBw0YaeZByrVFZkVAoVTxXUtuKgDDdrmJQXMnI4jqJYetsZCP1efj5ygGscZBm4OvvuCYB039ZAFlyNn
+<WHATSAPP_USER_NUMBER>
+Required.
+Your WhatsApp phone number that can send and receive messages from other WhatsApp numbers.
+Note that this cannot be a business phone number already registered for use with Cloud API.
++16505551234
+Response
+Upon success:
+{
+"messaging_product": "whatsapp",
+"contacts": [
+{
+"input": "<WHATSAPP_USER_NUMBER>",
+"wa_id": "<WHATSAPP_USER_ID>"
+}
+],
+"messages": [
+{
+"id": "<WHATSAPP_MESSAGE_ID>"
+}
+]
+}
+Response parameters
+Placeholder
+Description
+Example value
+<WHATSAPP_MESSAGE_ID>
+WhatsApp message ID.
+wamid.HBgLMTY0NjcwNDM1OTUVAgARGBI1RjQyNUE3NEYxMzAzMzQ5MkEA
+<WHATSAPP_USER_ID>
+Your WhatsApp user ID.
+16505551234
+<WHATSAPP_USER_NUMBER>
+Your WhatsApp phone number that the message was sent to.
++16505551234
+If you were able to successfully send and receive messages using the customer’s business phone number, and if
+messages
+webhooks were triggered
+describing the initial message that you sent
+, as well as the
+delivery statuses
+of the message you sent in response, the customer’s business phone number is working properly.
+Did you find this page helpful?

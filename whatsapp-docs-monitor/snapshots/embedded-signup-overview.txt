@@ -1,0 +1,597 @@
+WhatsApp Business Platform
+WhatsApp Business Platform
+Business Messaging
+WhatsApp Business Platform
+WhatsApp Business Platform
+Overview
+About the platform
+Access tokens
+Permissions
+Pricing
+Pricing
+Authentication-international rates
+Conversation-based pricing
+AI Providers
+Get started
+Marketing messages
+Overview
+Get started
+Features
+Marketing templates
+Overview
+Custom marketing templates
+Call permission request message template
+Coupon code templates
+Limited-time-offer templates
+Media card carousel templates
+Guides
+Onboarding
+Measure conversions
+Track click events
+View metrics
+Deep links
+Send marketing messages
+Onboard business customers
+Pricing
+Changelog
+Utility messages
+Overview
+Utility templates
+Call permission request templates
+Authentication messages
+Overview
+Authenticating users
+Error signals
+Authentication templates
+One-tap autofill
+Zero-tap
+Copy code
+Bulk management
+Previews
+Service messages
+Overview
+Types of messages
+Address
+Audio
+Contacts
+Document
+Image
+Interactive
+URL button
+List buttons
+Media carousel
+Reply buttons
+Location
+Location request
+Reaction
+Sticker
+Text
+Video
+Calling
+Overview
+Configure call settings
+Business-initiated calls
+User call permissions
+User-initiated calls
+Session Initiation Protocol
+Call button messages and deep links
+Integration patterns
+Integration examples
+Reference
+Troubleshooting
+Calling sandbox account
+App Review guidelines
+Pricing
+FAQ
+Groups
+Overview
+Get started
+Group management
+Group messaging
+Webhooks
+Error codes
+Pricing
+FAQ
+Catalogs
+Overview
+Get started
+Upload inventory
+Set commerce settings
+Share products
+Receiving responses
+Messages
+Catalog link messages
+Catalog messages
+Catalog template messages
+Multi-product messages
+Multi-product template messages
+Product carousel messages
+Product carousel template messages
+Single-product messages
+Single-product template messages
+Partners
+Overview
+Become a partner
+Become a Tech Provider
+Become a Solution Partner
+Become a Measurement Partner
+Upgrade to Tech Partner
+App Review
+Embedded Signup
+Overview
+Implementation
+Onboarding for Tech Providers
+Onboarding for Solution Partners
+Cloud API flow
+Custom flows
+Pre-filling screens
+Pre-verified phone numbers
+Bypassing phone number screens
+Making website optional
+App-only install
+Hosted ES
+Automatic Events
+Versions
+v4
+v3
+v3 public preview
+v2 public preview
+Errors
+Onboard Business app users (Coexistence)
+Partner-initiated WABA creation
+Multi-Partner Solutions
+Overview
+Embedded Creation
+Migrate WABAs among solutions via Embedded Signup
+Migrate WABAs among solutions via Meta Business Suite
+Migrate WABAs among partners via Embedded Signup
+Migrating customers off solutions via Embedded Signup
+Migrating customers off solutions via Meta Business Suite
+Add WABAs to a Multi-Partner Solution
+Multi-Solution Conversations
+Partner-led business verification
+Pixel tracking
+Manage customer assets
+WhatsApp Business Accounts
+Phone numbers
+Overview
+Registering phone numbers via API
+System users
+Credit lines
+Webhooks
+Partner support
+Support
+Migrate numbers among partners via Embedded Signup
+Migrate numbers among partners programmatically
+Business customer support
+OBO model deprecation
+Webhooks
+Overview
+Create a webhook endpoint
+Create a test webhook endpoint
+Override the callback URL
+Webhooks reference
+account_alerts
+account_review_update
+account_update
+business_capability_update
+history
+message_template_components_update
+message_template_quality_update
+message_template_status_update
+messages
+Overview
+audio messages
+button messages
+contacts messages
+document messages
+edit messages
+errors messages
+group messages
+image messages
+interactive messages
+location messages
+order messages
+reaction messages
+revoke messages
+status messages
+sticker messages
+system messages
+text messages
+unsupported messages
+video messages
+partner_solutions
+payment_configuration_update
+phone_number_name_update
+phone_number_quality_update
+security
+smb_app_state_sync
+smb_message_echoes
+template_category_update
+user_preferences
+Template fundamentals
+Overview
+Components
+Languages
+Categorization
+Comparison
+Library
+Archival
+Management
+Overview
+Migration
+Configure time-to-live
+Tap target URL title override
+Quality and delivery
+Quality rating
+Review
+Pausing
+Business portfolio pacing
+Template pacing
+Messaging limits
+Upcoming changes to messaging limits
+Per-user marketing template limits
+Messaging features
+Media
+Read receipts
+Contextual replies
+Typing indicators
+Link previews
+Throughput
+Account assets
+Business phone numbers
+Overview
+Register a phone number
+Two-step verification
+Conversational components
+Business-scoped user IDs
+Business profiles
+Display names
+Official Business Accounts
+WhatsApp Business Accounts
+QR codes and message links
+Timezone IDs
+Analytics
+Ads that click to WhatsApp
+Welcome message sequences
+Payments
+Payments India
+Overview
+Onboarding APIs
+UPI Intent
+Dynamic VPA
+Cashfree
+Billdesk
+CCAvenue
+Payment links
+Enhanced payment links
+Payment gateway
+Order details templates
+Order status templates
+Checkout button templates
+Payments Brazil
+Overview
+Orders
+Pix
+Payment links
+Boleto
+One-click payments
+Order details templates
+Payment request CTA templates
+Data, Privacy, & Policy
+Policy enforcement
+Violations
+Blocking users
+Data privacy & security
+Local storage
+No storage
+Obtaining user opt-in
+User identity changes
+Support
+Support
+API status page
+Health status
+Load testing
+Experiments
+Use an existing WhatsApp number
+Resources
+API Reference
+Application
+Application Connected Client Businesses
+Application Solutions API
+Solution Creation API
+Business
+Add Phone Numbers API
+Business Account API
+Client WhatsApp Business Accounts API
+Owned WhatsApp Business Accounts
+WhatsApp Business Accounts API
+WhatsApp Business Partner Onboarding to MM Lite API
+WhatsApp Business Pre-Verified Phone Number Sharing API
+WhatsApp Business Pre-Verified Phone Numbers API
+Groups
+Groups Invite Link API
+Groups Join Requests API
+Groups Participants API
+Groups Query API
+Media
+Media API
+Media Download API
+Message History
+WhatsApp Business Message History Events API
+User
+Assigned WhatsApp Business Accounts API
+Webhooks
+WhatsApp Incoming Webhook Payload
+WhatsApp Account Number
+WhatsApp Account Number API
+WhatsApp Business Account
+Assigned Users Management API
+Conversational Automation API
+Extended Credits API
+Phone Number Management API
+Schedules API
+Subscribed Apps API
+Template API
+WhatsApp Business Account API
+WhatsApp Business Account Activities API
+WhatsApp Business Account Solutions List API
+WhatsApp Business Account Migration Intent
+Migration Intent Details API
+WhatsApp Business Bot
+Bot Details API
+WhatsApp Business Phone Number
+Block API
+Business Compliance Information API
+Business Encryption API
+Calling API
+Commerce Settings API
+Groups Management API
+Marketing Messages Lite API
+Media Upload API
+Message API
+Phone Number Deregister API
+Phone Number Registration
+Phone Number Verification Request Code API
+Settings API
+Verify Code API
+WhatsApp Business Account Official Business Account Status API
+WhatsApp Business Account Phone Number API
+WhatsApp Business Profile API
+WhatsApp Business QR Code API
+WhatsApp Business QR Code Management API
+WhatsApp Business Pre Verified Phone Number
+Request Verification Code API
+Verify Code API
+WhatsApp Business Pre-Verified Phone Number API
+WhatsApp Business Pre-Verified Phone Number Partners API
+WhatsApp Business Profile
+WhatsApp Business Profile Node API
+WhatsApp Business Solution
+Accept Deactivation Request API
+Access Token API
+Reject Deactivation Request API
+Send Deactivation Request API
+Solution Accept API
+Solution Details API
+Solution Reject API
+Changelog
+Error codes
+Embedded Signup
+Updated
+:
+Nov 25, 2025
+Embedded Signup is an authentication and authorization desktop- and mobile-compatible interface that makes it easy for your business customers to generate the assets you will need to successfully onboard them to the WhatsApp Business Platform.
+The Embedded Signup flow gathers business-related information from your business customers, automatically generates all WhatsApp assets needed by the platform, and grants your app access to these assets, so you can quickly provide your business customers with WhatsApp messaging services.
+How it works
+Embedded Signup leverages the Facebook Login for Business product and our JavaScript SDK. Once configured, you can add a link or button to your website or portal that launches the flow.
+Business customers who click the link or button will be presented with a new window where they can:
+authenticate their identity using their Facebook or Meta Business Credentials
+accept terms of service for Cloud API, WhatsApp Business, Meta, Marketing Messages Lite API and Meta Business Tool Terms
+select multiple WhatsApp APIs and accept terms of service
+grant your app access to their WhatsApp assets
+select an existing business portfolio or create a new one
+select an existing WhatsApp Business Account (WABA) or create a new one
+enter and verify their business phone number (their own, or one you have provided)
+enter a display name that can appear in place of their number in the WhatsApp client
+Upon successful completion, Embedded Signup returns the customer’s WABA ID, business phone number ID, and an exchangeable token code, to the window that spawned the flow. You must send this data to your server and use it in a server-to-server call to:
+exchange the code for a customer-scoped business token
+register the customer’s business phone number for Cloud API use
+subscribe your app to webhooks on the customer’s WABA
+share your credit line with the customer (Solution Partners only)
+When these steps are complete, if you are a Solution Partner or are partnered with one, the customer can begin using your or your partner’s app for messaging immediately. If you are not a Solution Partner, or not partnered with one, the customer must first attach a payment method to their WABA before they can begin messaging.
+We’re testing a new experience in the Embedded Signup flow for all versions. The flow itself is unchanged, but after completion, you may see a new
+View your setup guide
+button. Clicking it will take you to a new setup guidance page in WhatsApp Manager, which offers next steps on:
+Business verification
+Resolving integrity issues and accessing Business Support Home
+Sending the first message via a partner solution
+Sending business-initiated messages using templates
+Asset ownership
+Business customers onboarded via Embedded Signup own all of their WhatsApp assets, which they can leverage with other Meta solutions such as
+Ads that Click to WhatsApp
+⁠
+.
+Business customers also have full access to
+WhatsApp Manager
+⁠
+, which they can use to access their assets. Note that you cannot restrict this access in any way. Refer to available assets
+here
+.
+Limitations
+Onboarding limits
+By default, you can onboard up to 10 new business customers in a rolling 7-day window. Only newly onboarded customers count against this limit. You can see your current onboarded customer count in the
+WhatsApp Manager
+>
+Partner overview
+panel. You will be notified by email if you approach this limit.
+If you complete Business Verification, App Review, and Access Verification, we will automatically increase your limit to 200 new business customers in a rolling 7-day window. If you need to onboard more than 200 customers per week, apply to become a
+Meta Business Partner
+⁠
+.
+Note:
+Existing WhatsApp Business Accounts (WABAs) that were originally created via the developer app cannot be selected or onboarded directly through the Embedded Signup flow.
+Business customer messaging limits
+Business customers onboarded via Embedded Signup start with standard
+messaging limits
+, which can be increased through API usage.
+Business customer phone number limits
+Business phone numbers can only be registered for use with Cloud API.
+Business phone numbers already in use with the
+WhatsApp Business app
+⁠
+are supported, but require you customize the flow to enable
+WhatsApp Business app user onboarding
+.
+Business customers onboarded via Embedded Signup start with default
+messaging limits
+.
+Cloud API flow
+See
+Cloud API Flow
+for descriptions of each screen that your business customers will be presented with as part of the default implementation of Embedded Signup.
+Note that if you know information about your customer’s business, you can
+inject this data
+, which can significantly reduce the number of screens that your customers have to interact with.
+Access tokens
+Embedded Signup generates
+business tokens
+. When a business customer completes the Embedded Signup flow, an exchangeable token code will be returned as a message event and captured by the JavaScript SDK. You must exchange this code for a business token using a server-to-server call.
+If you are a Tech Provider, you will use business tokens exclusively.
+If you are a Solution Partner, you will use your
+system user access token
+(“system token”) to share your credit line with onboarded business customers, and business tokens for everything else. Note that the system user who the token represents must have granted your app the
+business_management
+permission, and must have been granted an
+Admin
+or
+Financial Editor
+role on your business portfolio, in order to be able to share your credit line.
+Permissions
+Embedded Signup can be configured to support business messaging products for your customers. If you are only interested in the Cloud API flow you are likely only going to need:
+whatsapp_business_management
+— necessary if your app needs access to onboarded customer WhatsApp Business Account settings and message templates.
+whatsapp_business_messaging
+— necessary if your app needs access to onboarded customer business phone number settings, or if your app will be used by customers to send and receive messages.
+You can specify which permissions your app needs during the
+implementation
+process.
+Note that while your app is in development mode, these permissions will appear in Embedded Signup’s
+authorization screen
+to anyone who has an
+admin
+,
+developer
+, or
+tester
+role on your app. However, once you switch your app to live mode, only permissions that have been approved for advanced access through the
+App Review
+process will appear in the flow.
+Billing
+Solution Partners
+If you are a Solution Partner, you must already have a
+line of credit
+⁠
+and have accepted the Credit Allocation API terms in the
+Business Settings
+>
+Payments
+panel in the Meta Business Suite. In addition, you must share your line of credit with any customers as part of the onboarding process.
+Tech Providers and Tech Partners
+If you are a Tech Provider or Tech Partner, your onboarded business customers must add a payment method to their WhatsApp Business Account. They can do this by following the steps described in our
+Add a credit card to your WhatsApp Business Platform account
+⁠
+Help Center article.
+Sandbox accounts
+You can test the Embedded Signup flow using your own Facebook account, but this can result in additional business portfolios, WABAs, and business phone numbers. If you don’t want to clutter your Facebook account with test data, you can claim a sandbox test account instead, and use it to simulate a business customer completing the flow.
+When you complete the flow using the sandbox account, the sandbox account’s
+WABA ID, business phone number ID
+, and an
+exchangeable token code
+will be returned, just as if it were a real customer completing the flow.
+Sandbox account limitations
+Sandbox accounts are valid for 30 days, after which they will be deactivated and must be reclaimed in order to be used again.
+The sandbox account cannot be used to create additional sandbox business portfolios, WABAs, or business phone numbers; the assets are generated automatically and will appear in the Embedded Signup flow.
+The sandbox account is associated with the app’s admin. In order for the sandbox account’s assets to appear in the Embedded Signup flow, the app admin must be signed into their Meta developer account.
+The sandbox account’s business portfolio will not appear in the Meta Business Suite or WhatsApp Manager
+You can exchange the returned token code for the sandbox account’s business token and use it to get data on the account’s WABA ID, but the business phone number cannot be used to send or receive messages.
+Claiming sandbox accounts
+To claim your sandbox account:
+Navigate to the
+App Dashboard
+>
+WhatsApp
+>
+Quickstart
+panel.
+Locate the
+Testing Integrations
+section.
+Click the
+Claim sandbox account
+button.
+Deleting sandbox accounts
+Sandbox account deletion is being released gradually over several weeks, starting June 25, 2025.
+If you are done testing and want to keep your testing environment clean, you can delete your sandbox account. Deleting a sandbox account is irreversible and removes all associated test data. If you accidentally delete your sandbox account but need to test again, you must claim a new one.
+To delete your sandbox account:
+Navigate to the
+App Dashboard
+>
+WhatsApp
+>
+Quickstart
+panel.
+Locate the
+Testing Integrations
+section, then locate your sandbox account.
+Click your sandbox account’s
+Delete account
+button.
+555 business phone numbers
+Business customers can claim up to two 555 business phone numbers. These numbers behave the same way as standard business phone numbers (subject to pricing rules, impacted by quality ratings, etc.), but must have their display names approved before they can be used to send messages. In addition, 555 numbers:
+Have a US country calling code (+1)
+Have a 555 area code
+Are verified automatically
+Cannot be migrated to another WhatsApp Business Account, or used outside of the WhatsApp Business platform
+If your business customers are eligible for 555 numbers, the
+phone number addition screen
+will automatically give them the option to choose a 555 number:
+WhatsApp Asset migration
+Embedded Signup can be used to migrate onboarded business customer assets in several ways. See
+Migrating business customer assets
+.
+App Review
+You will not be able to onboard business customers until your app has been approved for
+advanced access
+for each of the permissions it requires.
+See
+App Review
+to learn more about App Review and what you must provide in order to complete the process successfully.
+Embedded Signup Integration Helper
+The Embedded Signup Integration Helper is a setup and testing tool within the App Dashboard. The tool allows you to:
+launch Embedded Signup in various flow configurations
+see data that gets returned when a business customer completes the flow
+generate implementation code and onboarding queries, which you can copy and paste into your website, business customer portal, and server
+send API queries to endpoints you will need to use when onboarding customers who complete the flow
+You can access the integration helper by navigating to
+App Dashboard
+>
+WhatsApp
+>
+Embedded Signup Builder
+.
+Note:
+The Embedded Signup Integration Helper is available only for Business-type apps. You can view your app type at the top of the app dashboard.
+Webhooks
+As part of the onboarding process, you must subscribe your app to webhooks on the WABA of each business customer who completes the Embedded Signup flow.
+Webhooks will be triggered and sent to the callback URL configured on your app, according to the webhook fields you have subscribed to. This means that all webhooks for all of your onboarded business customers will be sent to your app’s callback URL. However, you can override the callback URL on an individual WhatsApp Business Account or business phone number. See
+Webhook Overrides
+to learn how to do this.
+Localization
+The Embedded Signup flow is available in 30 languages. The localized flow is automatically triggered based on the language that the business customer uses Facebook in.
+Arabic, Czech, Danish, Greek, English (UK), Spanish (Spain), Spanish, Finnish, French (France), Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian (bokmal), Dutch, Polish, Portuguese (Brazil), Portuguese (Portugal), Romanian, Russian, Swedish, Thai, Turkish, Vietnamese, Simplified Chinese (China), Traditional Chinese (Hong Kong), Traditional Chinese (Taiwan).
+Next steps
+Learn how to
+implement Embedded Signup
+into your website or portal.
+Did you find this page helpful?

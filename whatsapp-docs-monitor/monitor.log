@@ -1,0 +1,247 @@
+[2026-05-01 10:55:20] ============================================================
+[2026-05-01 10:55:20] Starting WhatsApp Embedded Signup Docs Monitor
+[2026-05-01 10:55:20] ============================================================
+[2026-05-01 10:55:20] [1/33] Fetching: Embedded Signup - Overview
+[2026-05-01 10:55:21] [2/33] Fetching: Embedded Signup - Implementation
+[2026-05-01 10:55:24]   NEW PAGE: Embedded Signup - Implementation (752 lines)
+[2026-05-01 10:55:24] [3/33] Fetching: Customizing the default flow
+[2026-05-01 10:55:27]   NEW PAGE: Customizing the default flow (401 lines)
+[2026-05-01 10:55:27] [4/33] Fetching: Onboard WhatsApp Business app users (Coexistence)
+[2026-05-01 10:55:31]   NEW PAGE: Onboard WhatsApp Business app users (Coexistence) (1754 lines)
+[2026-05-01 10:55:31] [5/33] Fetching: Pre-filling screens
+[2026-05-01 10:55:34]   NEW PAGE: Pre-filling screens (869 lines)
+[2026-05-01 10:55:34] [6/33] Fetching: Pre-verified phone numbers
+[2026-05-01 10:55:35] ERROR fetching https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/pre-verified-phone-numbers/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/pre-verified-phone-numbers/
+[2026-05-01 10:55:35]   ERROR: Could not fetch Pre-verified phone numbers
+[2026-05-01 10:55:35] [7/33] Fetching: Bypassing phone number screens
+[2026-05-01 10:55:35] ERROR fetching https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/bypassing-phone-number-screens/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/bypassing-phone-number-screens/
+[2026-05-01 10:55:35]   ERROR: Could not fetch Bypassing phone number screens
+[2026-05-01 10:55:35] [8/33] Fetching: Making website optional
+[2026-05-01 10:55:36] ERROR fetching https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/making-website-optional/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/making-website-optional/
+[2026-05-01 10:55:36]   ERROR: Could not fetch Making website optional
+[2026-05-01 10:55:36] [9/33] Fetching: App-only install
+[2026-05-01 10:55:39]   NEW PAGE: App-only install (515 lines)
+[2026-05-01 10:55:39] [10/33] Fetching: Hosted ES
+[2026-05-01 10:55:41]   NEW PAGE: Hosted ES (538 lines)
+[2026-05-01 10:55:41] [11/33] Fetching: Automatic Events
+[2026-05-01 10:55:42] ERROR fetching https://developers.facebook.com/docs/whatsapp/embedded-signup/automatic-events/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/embedded-signup/automatic-events/
+[2026-05-01 10:55:42]   ERROR: Could not fetch Automatic Events
+[2026-05-01 10:55:42] [12/33] Fetching: Onboarding customers as a Tech Provider
+[2026-05-01 10:55:43]   NEW PAGE: Onboarding customers as a Tech Provider (635 lines)
+[2026-05-01 10:55:43] [13/33] Fetching: Onboarding customers as a Solution Partner
+[2026-05-01 10:55:46]   NEW PAGE: Onboarding customers as a Solution Partner (676 lines)
+[2026-05-01 10:55:46] [14/33] Fetching: Cloud API flow
+[2026-05-01 10:55:47] ERROR fetching https://developers.facebook.com/docs/whatsapp/embedded-signup/cloud-api-flow/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/embedded-signup/cloud-api-flow/
+[2026-05-01 10:55:47]   ERROR: Could not fetch Cloud API flow
+[2026-05-01 10:55:47] [15/33] Fetching: Version 4
+[2026-05-01 10:55:47] ERROR fetching https://developers.facebook.com/docs/whatsapp/embedded-signup/versions/v4/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/embedded-signup/versions/v4/
+[2026-05-01 10:55:47]   ERROR: Could not fetch Version 4
+[2026-05-01 10:55:47] [16/33] Fetching: Version 3
+[2026-05-01 10:55:49] ERROR fetching https://developers.facebook.com/docs/whatsapp/embedded-signup/versions/v3/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/embedded-signup/versions/v3/
+[2026-05-01 10:55:49]   ERROR: Could not fetch Version 3
+[2026-05-01 10:55:49] [17/33] Fetching: Embedded Signup Errors
+[2026-05-01 10:55:51]   NEW PAGE: Embedded Signup Errors (919 lines)
+[2026-05-01 10:55:51] [18/33] Fetching: Multi-Partner Solutions Overview
+[2026-05-01 10:55:54]   NEW PAGE: Multi-Partner Solutions Overview (1191 lines)
+[2026-05-01 10:55:54] [19/33] Fetching: Multi-Partner Solutions - Embedded Creation
+[2026-05-01 10:55:55] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/embedded-creation/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/embedded-creation/
+[2026-05-01 10:55:55]   ERROR: Could not fetch Multi-Partner Solutions - Embedded Creation
+[2026-05-01 10:55:55] [20/33] Fetching: Migrate WABAs among solutions via Embedded Signup
+[2026-05-01 10:55:55] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas-among-solutions-via-embedded-signup/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas-among-solutions-via-embedded-signup/
+[2026-05-01 10:55:55]   ERROR: Could not fetch Migrate WABAs among solutions via Embedded Signup
+[2026-05-01 10:55:55] [21/33] Fetching: Migrate WABAs among solutions via Meta Business Suite
+[2026-05-01 10:55:56] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas-among-solutions-via-meta-business-suite/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas-among-solutions-via-meta-business-suite/
+[2026-05-01 10:55:56]   ERROR: Could not fetch Migrate WABAs among solutions via Meta Business Suite
+[2026-05-01 10:55:56] [22/33] Fetching: Migrate WABAs among partners via Embedded Signup
+[2026-05-01 10:55:56] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas-among-partners-via-embedded-signup/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas-among-partners-via-embedded-signup/
+[2026-05-01 10:55:56]   ERROR: Could not fetch Migrate WABAs among partners via Embedded Signup
+[2026-05-01 10:55:56] [23/33] Fetching: Migrating customers off solutions via Embedded Signup
+[2026-05-01 10:55:57] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrating-customers-off-solutions-via-embedded-signup/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrating-customers-off-solutions-via-embedded-signup/
+[2026-05-01 10:55:57]   ERROR: Could not fetch Migrating customers off solutions via Embedded Signup
+[2026-05-01 10:55:57] [24/33] Fetching: Migrating customers off solutions via Meta Business Suite
+[2026-05-01 10:55:58] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrating-customers-off-solutions-via-meta-business-suite/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrating-customers-off-solutions-via-meta-business-suite/
+[2026-05-01 10:55:58]   ERROR: Could not fetch Migrating customers off solutions via Meta Business Suite
+[2026-05-01 10:55:58] [25/33] Fetching: Add WABAs to a Multi-Partner Solution
+[2026-05-01 10:55:58] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/add-wabas-to-multi-partner-solution/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/add-wabas-to-multi-partner-solution/
+[2026-05-01 10:55:58]   ERROR: Could not fetch Add WABAs to a Multi-Partner Solution
+[2026-05-01 10:55:58] [26/33] Fetching: Multi-Solution Conversations
+[2026-05-01 10:55:59] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/multi-solution-conversations/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/multi-solution-conversations/
+[2026-05-01 10:55:59]   ERROR: Could not fetch Multi-Solution Conversations
+[2026-05-01 10:55:59] [27/33] Fetching: Partner-led business verification
+[2026-05-01 10:56:03]   NEW PAGE: Partner-led business verification (674 lines)
+[2026-05-01 10:56:03] [28/33] Fetching: Partner-initiated WABA creation
+[2026-05-01 10:56:04] ERROR fetching https://developers.facebook.com/docs/whatsapp/embedded-signup/partner-initiated-waba-creation/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/embedded-signup/partner-initiated-waba-creation/
+[2026-05-01 10:56:04]   ERROR: Could not fetch Partner-initiated WABA creation
+[2026-05-01 10:56:04] [29/33] Fetching: Pixel tracking
+[2026-05-01 10:56:06]   NEW PAGE: Pixel tracking (413 lines)
+[2026-05-01 10:56:06] [30/33] Fetching: WhatsApp Business Accounts
+[2026-05-01 10:56:07] ERROR fetching https://developers.facebook.com/docs/whatsapp/business-management-api/whatsapp-business-accounts/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/business-management-api/whatsapp-business-accounts/
+[2026-05-01 10:56:07]   ERROR: Could not fetch WhatsApp Business Accounts
+[2026-05-01 10:56:07] [31/33] Fetching: Migrate numbers among partners via Embedded Signup
+[2026-05-01 10:56:07] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/support/migrate-numbers-among-partners-via-embedded-signup/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/support/migrate-numbers-among-partners-via-embedded-signup/
+[2026-05-01 10:56:07]   ERROR: Could not fetch Migrate numbers among partners via Embedded Signup
+[2026-05-01 10:56:07] [32/33] Fetching: Migrate numbers among partners programmatically
+[2026-05-01 10:56:08] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/support/migrate-numbers-among-partners-programmatically/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/support/migrate-numbers-among-partners-programmatically/
+[2026-05-01 10:56:08]   ERROR: Could not fetch Migrate numbers among partners programmatically
+[2026-05-01 10:56:08] [33/33] Fetching: Business customer support
+[2026-05-01 10:56:09] FIRST RUN: Baseline snapshots saved. No email sent.
+[2026-05-01 10:56:09] Subsequent runs will detect and report changes.
+[2026-05-01 10:56:09] 
+[2026-05-01 10:56:09] ============================================================
+[2026-05-01 10:56:09] Monitoring complete:
+[2026-05-01 10:56:09]   Pages checked: 33
+[2026-05-01 10:56:09]   Pages changed: 0
+[2026-05-01 10:56:09]   New pages: 12
+[2026-05-01 10:56:09]   Removed pages: 0
+[2026-05-01 10:56:09]   Errors: 21
+[2026-05-01 10:56:09] ============================================================
+[2026-05-01 10:59:13] ============================================================
+[2026-05-01 10:59:13] Starting WhatsApp Embedded Signup Docs Monitor
+[2026-05-01 10:59:13] ============================================================
+[2026-05-01 10:59:13] [1/23] Fetching: Embedded Signup - Overview
+[2026-05-01 10:59:14]   NEW PAGE: Embedded Signup - Overview (597 lines)
+[2026-05-01 10:59:14] [2/23] Fetching: Embedded Signup - Implementation
+[2026-05-01 10:59:19]   NEW PAGE: Embedded Signup - Implementation (752 lines)
+[2026-05-01 10:59:19] [3/23] Fetching: Customizing the default flow
+[2026-05-01 10:59:20]   NEW PAGE: Customizing the default flow (401 lines)
+[2026-05-01 10:59:20] [4/23] Fetching: Onboard WhatsApp Business app users (Coexistence)
+[2026-05-01 10:59:24]   NEW PAGE: Onboard WhatsApp Business app users (Coexistence) (1754 lines)
+[2026-05-01 10:59:24] [5/23] Fetching: Pre-filling screens
+[2026-05-01 10:59:29]   NEW PAGE: Pre-filling screens (869 lines)
+[2026-05-01 10:59:29] [6/23] Fetching: Pre-verified phone numbers
+[2026-05-01 10:59:33]   NEW PAGE: Pre-verified phone numbers (673 lines)
+[2026-05-01 10:59:33] [7/23] Fetching: Bypassing phone number screens
+[2026-05-01 10:59:34]   NEW PAGE: Bypassing phone number screens (429 lines)
+[2026-05-01 10:59:34] [8/23] Fetching: Making website optional
+[2026-05-01 10:59:37]   NEW PAGE: Making website optional (455 lines)
+[2026-05-01 10:59:37] [9/23] Fetching: App-only install
+[2026-05-01 10:59:41]   NEW PAGE: App-only install (515 lines)
+[2026-05-01 10:59:41] [10/23] Fetching: Hosted ES
+[2026-05-01 10:59:45]   NEW PAGE: Hosted ES (538 lines)
+[2026-05-01 10:59:45] [11/23] Fetching: Automatic Events API
+[2026-05-01 10:59:53]   NEW PAGE: Automatic Events API (645 lines)
+[2026-05-01 10:59:53] [12/23] Fetching: Onboarding customers as a Tech Provider
+[2026-05-01 10:59:54]   NEW PAGE: Onboarding customers as a Tech Provider (635 lines)
+[2026-05-01 10:59:54] [13/23] Fetching: Onboarding customers as a Solution Partner
+[2026-05-01 10:59:56]   NEW PAGE: Onboarding customers as a Solution Partner (676 lines)
+[2026-05-01 10:59:56] [14/23] Fetching: Version 4
+[2026-05-01 11:00:00]   NEW PAGE: Version 4 (503 lines)
+[2026-05-01 11:00:00] [15/23] Fetching: Embedded Signup Errors
+[2026-05-01 11:00:03]   NEW PAGE: Embedded Signup Errors (919 lines)
+[2026-05-01 11:00:03] [16/23] Fetching: Multi-Partner Solutions Overview
+[2026-05-01 11:00:07]   NEW PAGE: Multi-Partner Solutions Overview (1191 lines)
+[2026-05-01 11:00:07] [17/23] Fetching: Migrate WABAs among solutions via Embedded Signup
+[2026-05-01 11:00:07] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas/
+[2026-05-01 11:00:07]   ERROR: Could not fetch Migrate WABAs among solutions via Embedded Signup
+[2026-05-01 11:00:07] [18/23] Fetching: Migrate WABAs among partners via Embedded Signup
+[2026-05-01 11:00:08] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas-among-partners/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-wabas-among-partners/
+[2026-05-01 11:00:08]   ERROR: Could not fetch Migrate WABAs among partners via Embedded Signup
+[2026-05-01 11:00:08] [19/23] Fetching: Migrating customers off solutions via Embedded Signup
+[2026-05-01 11:00:09] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-off-solutions/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/migrate-off-solutions/
+[2026-05-01 11:00:09]   ERROR: Could not fetch Migrating customers off solutions via Embedded Signup
+[2026-05-01 11:00:09] [20/23] Fetching: Add WABAs to a Multi-Partner Solution
+[2026-05-01 11:00:09] ERROR fetching https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/add-wabas-to-multi-partner-solution/: 404 Client Error: Not Found for url: https://developers.facebook.com/docs/whatsapp/solution-providers/multi-partner-solutions/add-wabas-to-multi-partner-solution/
+[2026-05-01 11:00:09]   ERROR: Could not fetch Add WABAs to a Multi-Partner Solution
+[2026-05-01 11:00:09] [21/23] Fetching: Partner-led business verification
+[2026-05-01 11:00:11]   NEW PAGE: Partner-led business verification (674 lines)
+[2026-05-01 11:00:11] [22/23] Fetching: Partner-initiated WABA creation
+[2026-05-01 11:00:16]   NEW PAGE: Partner-initiated WABA creation (529 lines)
+[2026-05-01 11:00:16] [23/23] Fetching: Pixel tracking
+[2026-05-01 11:00:18]   NEW PAGE: Pixel tracking (413 lines)
+[2026-05-01 11:00:18] FIRST RUN: Baseline snapshots saved. No email sent.
+[2026-05-01 11:00:18] Subsequent runs will detect and report changes.
+[2026-05-01 11:00:18] 
+[2026-05-01 11:00:18] ============================================================
+[2026-05-01 11:00:18] Monitoring complete:
+[2026-05-01 11:00:18]   Pages checked: 23
+[2026-05-01 11:00:18]   Pages changed: 0
+[2026-05-01 11:00:18]   New pages: 19
+[2026-05-01 11:00:18]   Removed pages: 0
+[2026-05-01 11:00:18]   Errors: 4
+[2026-05-01 11:00:18] ============================================================
+[2026-05-01 11:01:15] ============================================================
+[2026-05-01 11:01:15] Starting WhatsApp Embedded Signup Docs Monitor
+[2026-05-01 11:01:15] ============================================================
+[2026-05-01 11:01:15] [1/23] Fetching: Embedded Signup - Overview
+[2026-05-01 11:01:21]   NEW PAGE: Embedded Signup - Overview (597 lines)
+[2026-05-01 11:01:21] [2/23] Fetching: Embedded Signup - Implementation
+[2026-05-01 11:01:23]   NEW PAGE: Embedded Signup - Implementation (752 lines)
+[2026-05-01 11:01:23] [3/23] Fetching: Customizing the default flow
+[2026-05-01 11:01:26]   NEW PAGE: Customizing the default flow (401 lines)
+[2026-05-01 11:01:26] [4/23] Fetching: Onboard WhatsApp Business app users (Coexistence)
+[2026-05-01 11:01:28]   NEW PAGE: Onboard WhatsApp Business app users (Coexistence) (1754 lines)
+[2026-05-01 11:01:28] [5/23] Fetching: Pre-filling screens
+[2026-05-01 11:01:31]   NEW PAGE: Pre-filling screens (869 lines)
+[2026-05-01 11:01:31] [6/23] Fetching: Pre-verified phone numbers
+[2026-05-01 11:01:32]   NEW PAGE: Pre-verified phone numbers (673 lines)
+[2026-05-01 11:01:32] [7/23] Fetching: Bypassing phone number screens
+[2026-05-01 11:01:35]   NEW PAGE: Bypassing phone number screens (429 lines)
+[2026-05-01 11:01:35] [8/23] Fetching: Making website optional
+[2026-05-01 11:01:39]   NEW PAGE: Making website optional (455 lines)
+[2026-05-01 11:01:39] [9/23] Fetching: App-only install
+[2026-05-01 11:01:41]   NEW PAGE: App-only install (515 lines)
+[2026-05-01 11:01:41] [10/23] Fetching: Hosted ES
+[2026-05-01 11:01:42]   NEW PAGE: Hosted ES (538 lines)
+[2026-05-01 11:01:42] [11/23] Fetching: Automatic Events API
+[2026-05-01 11:01:46]   NEW PAGE: Automatic Events API (645 lines)
+[2026-05-01 11:01:46] [12/23] Fetching: Onboarding customers as a Tech Provider
+[2026-05-01 11:01:48]   NEW PAGE: Onboarding customers as a Tech Provider (635 lines)
+[2026-05-01 11:01:48] [13/23] Fetching: Onboarding customers as a Solution Partner
+[2026-05-01 11:01:51]   NEW PAGE: Onboarding customers as a Solution Partner (676 lines)
+[2026-05-01 11:01:51] [14/23] Fetching: Version 4
+[2026-05-01 11:01:54]   NEW PAGE: Version 4 (503 lines)
+[2026-05-01 11:01:54] [15/23] Fetching: Embedded Signup Errors
+[2026-05-01 11:01:56]   NEW PAGE: Embedded Signup Errors (919 lines)
+[2026-05-01 11:01:56] [16/23] Fetching: Multi-Partner Solutions Overview
+[2026-05-01 11:02:01]   NEW PAGE: Multi-Partner Solutions Overview (1191 lines)
+[2026-05-01 11:02:01] [17/23] Fetching: Migrate WABAs among solutions via Embedded Signup
+[2026-05-01 11:02:04]   NEW PAGE: Migrate WABAs among solutions via Embedded Signup (475 lines)
+[2026-05-01 11:02:04] [18/23] Fetching: Migrate WABAs among partners via Embedded Signup
+[2026-05-01 11:02:05]   NEW PAGE: Migrate WABAs among partners via Embedded Signup (466 lines)
+[2026-05-01 11:02:05] [19/23] Fetching: Migrating customers off solutions via Embedded Signup
+[2026-05-01 11:02:08]   NEW PAGE: Migrating customers off solutions via Embedded Signup (531 lines)
+[2026-05-01 11:02:08] [20/23] Fetching: Add WABAs to a Multi-Partner Solution
+[2026-05-01 11:02:10]   NEW PAGE: Add WABAs to a Multi-Partner Solution (431 lines)
+[2026-05-01 11:02:10] [21/23] Fetching: Partner-led business verification
+[2026-05-01 11:02:13]   NEW PAGE: Partner-led business verification (674 lines)
+[2026-05-01 11:02:13] [22/23] Fetching: Partner-initiated WABA creation
+[2026-05-01 11:02:19]   NEW PAGE: Partner-initiated WABA creation (529 lines)
+[2026-05-01 11:02:19] [23/23] Fetching: Pixel tracking
+[2026-05-01 11:02:22]   NEW PAGE: Pixel tracking (413 lines)
+[2026-05-01 11:02:22] FIRST RUN: Baseline snapshots saved. No email sent.
+[2026-05-01 11:02:22] Subsequent runs will detect and report changes.
+[2026-05-01 11:02:22] 
+[2026-05-01 11:02:22] ============================================================
+[2026-05-01 11:02:22] Monitoring complete:
+[2026-05-01 11:02:22]   Pages checked: 23
+[2026-05-01 11:02:22]   Pages changed: 0
+[2026-05-01 11:02:22]   New pages: 23
+[2026-05-01 11:02:22]   Removed pages: 0
+[2026-05-01 11:02:22]   Errors: 0
+[2026-05-01 11:02:22] ============================================================
+[2026-05-01 11:03:15] ============================================================
+[2026-05-01 11:03:15] Starting WhatsApp Embedded Signup Docs Monitor
+[2026-05-01 11:03:15] ============================================================
+[2026-05-01 11:03:15] [1/23] Fetching: Embedded Signup - Overview
+[2026-05-01 11:03:17]   UNCHANGED: Embedded Signup - Overview
+[2026-05-01 11:03:17] [2/23] Fetching: Embedded Signup - Implementation
+[2026-05-01 11:03:21]   UNCHANGED: Embedded Signup - Implementation
+[2026-05-01 11:03:21] [3/23] Fetching: Customizing the default flow
+[2026-05-01 11:03:25]   UNCHANGED: Customizing the default flow
+[2026-05-01 11:03:25] [4/23] Fetching: Onboard WhatsApp Business app users (Coexistence)
+[2026-05-01 11:03:29]   UNCHANGED: Onboard WhatsApp Business app users (Coexistence)
+[2026-05-01 11:03:29] [5/23] Fetching: Pre-filling screens
+[2026-05-01 11:03:32]   UNCHANGED: Pre-filling screens
+[2026-05-01 11:03:32] [6/23] Fetching: Pre-verified phone numbers
+[2026-05-01 11:03:34]   UNCHANGED: Pre-verified phone numbers
+[2026-05-01 11:03:34] [7/23] Fetching: Bypassing phone number screens
+[2026-05-01 11:03:37]   UNCHANGED: Bypassing phone number screens
+[2026-05-01 11:03:37] [8/23] Fetching: Making website optional
+[2026-05-01 11:03:40]   UNCHANGED: Making website optional
+[2026-05-01 11:03:40] [9/23] Fetching: App-only install
+[2026-05-01 11:03:42]   UNCHANGED: App-only install
+[2026-05-01 11:03:42] [10/23] Fetching: Hosted ES
+[2026-05-01 11:03:44]   UNCHANGED: Hosted ES
+[2026-05-01 11:03:44] [11/23] Fetching: Automatic Events API
+[2026-05-01 11:03:45]   UNCHANGED: Automatic Events API
+[2026-05-01 11:03:45] [12/23] Fetching: Onboarding customers as a Tech Provider
