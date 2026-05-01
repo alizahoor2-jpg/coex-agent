@@ -472,7 +472,18 @@ def build_email_body(all_changes, new_pages, removed_pages):
             body.append("")
 
     if not all_changes and not new_pages and not removed_pages:
+        body.append("=" * 80)
+        body.append("SUMMARY")
+        body.append("=" * 80)
+        body.append(f"  Total pages monitored: {len(URLS)}")
+        body.append(f"  All pages checked: {len(URLS)}")
+        body.append(f"  Changes detected: 0")
+        body.append(f"  New pages found: 0")
+        body.append(f"  Pages removed: 0")
+        body.append("")
         body.append("NO CHANGES DETECTED - All pages are identical to previous snapshots.")
+        body.append("")
+        body.append("Last checked: " + now)
         body.append("")
 
     body.append("=" * 80)
@@ -591,12 +602,12 @@ def main():
     if is_first_run:
         log("FIRST RUN: Baseline snapshots saved. No email sent.")
         log("Subsequent runs will detect and report changes.")
-    elif has_changes:
-        subject = f"WhatsApp Docs CHANGES: {len(all_changes)} updated, {len(new_pages)} new, {len(removed_pages)} removed"
+    else:
+        subject = f"WhatsApp Docs Check: {len(all_changes)} changes, {len(new_pages)} new, {len(removed_pages)} removed"
+        if not has_changes:
+            subject = "WhatsApp Docs - NO CHANGES DETECTED"
         body = build_email_body(all_changes, new_pages, removed_pages)
         send_email(subject, body, config)
-    else:
-        log("No changes detected. No email sent.")
 
     # Summary
     log("")
