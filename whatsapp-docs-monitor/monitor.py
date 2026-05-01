@@ -23,8 +23,8 @@ from pathlib import Path
 # Paths
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SNAPSHOTS_DIR = SCRIPT_DIR / "snapshots"
-CONFIG_FILE = SCRIPT_DIR / "config.json"
 LOG_FILE = SCRIPT_DIR / "monitor.log"
+CONFIG_FILE = SCRIPT_DIR / "config.json"  # Kept for reference, not used
 
 # All WhatsApp Embedded Signup documentation URLs to monitor
 URLS = [
@@ -170,22 +170,14 @@ HEADERS = {
 
 
 def load_config():
-    """Load configuration from environment variables or config file."""
-    # Try environment variables first
-    config = {
-        "smtp_server": os.environ.get("SMTP_SERVER", "smtp.gmail.com"),
-        "smtp_port": int(os.environ.get("SMTP_PORT", "587")),
-        "sender_email": os.environ.get("SENDER_EMAIL", ""),
-        "sender_password": os.environ.get("SENDER_PASSWORD", ""),
-        "recipient_email": os.environ.get("RECIPIENT_EMAIL", ""),
+    """Load configuration - hardcoded for GitHub Actions."""
+    return {
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "sender_email": "mohdalizahoor@gmail.com",
+        "sender_password": "qlwb lerb nwom owna",
+        "recipient_email": "mohdalizahoor@gmail.com"
     }
-    
-    # Fall back to config file if env vars not set
-    if not config["sender_email"] and CONFIG_FILE.exists():
-        with open(CONFIG_FILE, "r") as f:
-            return json.load(f)
-    
-    return config
 
 
 def log(message):

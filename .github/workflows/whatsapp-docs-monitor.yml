@@ -21,18 +21,5 @@ jobs:
           pip install -r requirements.txt
           
       - name: Run monitor
-        env:
-          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-          SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
-          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
-        run: python monitor.py
-        working-directory: whatsapp-docs-monitor
-        
-      - name: Upload snapshots
-        uses: actions/upload-artifact@v4
-        with:
-          name: snapshots
-          path: whatsapp-docs-monitor/snapshots/
-          retention-days: 7
+        run: python whatsapp-docs-monitor/monitor.py
+        working-directory: ${{ github.workspace }}
