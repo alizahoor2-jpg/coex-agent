@@ -485,9 +485,9 @@ def main():
         log("FIRST RUN: Baseline snapshots saved. No email sent.")
         log("Subsequent runs will detect and report changes.")
     else:
-        subject = f"WhatsApp Docs Check: {len(all_changes)} changes, {len(new_pages)} new, {len(removed_pages)} removed"
+        subject = f"Coex Updates"
         if not has_changes:
-            subject = "WhatsApp Docs - NO CHANGES DETECTED"
+            subject = "Coex Updates - NO CHANGES"
         body = build_email_body(all_changes, new_pages, removed_pages)
         send_email(subject, body, config)
 
