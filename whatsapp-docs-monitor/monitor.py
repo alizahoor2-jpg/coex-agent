@@ -480,16 +480,20 @@ def main():
 
     # Build email
     has_changes = len(all_changes) > 0 or len(new_pages) > 0 or len(removed_pages) > 0
+    
+    # Count total lines changed
+    total_changes = sum(len(data["changes"]) for data in all_changes.values())
 
     if is_first_run:
         log("FIRST RUN: Baseline snapshots saved. No email sent.")
         log("Subsequent runs will detect and report changes.")
-    else:
+    elif total_changes >= 3:
+        # Only send email if 3+ actual changes (filters out nav/link updates)
         subject = f"Coex Updates"
-        if not has_changes:
-            subject = "Coex Updates - NO CHANGES"
         body = build_email_body(all_changes, new_pages, removed_pages)
         send_email(subject, body, config)
+    else:
+        log(f"No significant changes ({total_changes} lines). No email sent.")
 
     # Summary
     log("")
