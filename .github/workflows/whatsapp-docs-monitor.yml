@@ -2,8 +2,6 @@ name: WhatsApp Docs Monitor
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 * * * *'
 
 jobs:
   monitor:
