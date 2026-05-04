@@ -500,7 +500,8 @@ def main():
                     save_snapshot(page_info["slug"], data["new_content"], data["url"])
                     break
 else:
-        log("No changes. No email sent.")
+        # No changes - short email
+        send_email("Coex Updates - NO CHANGES", "No changes detected.", config)
 
     # Summary
     log("")
