@@ -10,7 +10,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-          persist-credentials: true
         
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,11 +21,3 @@ jobs:
         
       - name: Run monitor
         run: python whatsapp-docs-monitor/monitor.py
-        
-      - name: Commit changes
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add -A
-          git diff --cached --quiet || git commit -m "Update stored page"
-          git push
