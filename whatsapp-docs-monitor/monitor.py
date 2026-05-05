@@ -499,7 +499,7 @@ def main():
                 if page_info["name"] == name:
                     save_snapshot(page_info["slug"], data["new_content"], data["url"])
                     break
-else:
+    else:
         # No changes - short email
         send_email("Coex Updates - NO CHANGES", "No changes detected.", config)
 
