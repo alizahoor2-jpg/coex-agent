@@ -52,23 +52,19 @@ def load_config():
 
 def fetch_page(url):
     try:
-        session = requests.Session()
-        # Get cookies first
-        session.get("https://facebook.com", headers=HEADERS, timeout=30)
-        # Now try the actual page
-        r = session.get(url, headers=HEADERS, timeout=60)
+        import subprocess
+        # Use curl to fetch the page
+        result = subprocess.run([
+            "curl", "-s", "-L", 
+            "-A", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            url
+        ], capture_output=True, text=True, timeout=60)
         
-        # Check if we got a real page or error
-        if "Sorry, something went wrong" in r.text or "We're working on getting this fixed" in r.text:
-            # Try alternative URL via webcache
-            alt_url = f"https://webcache.googleusercontent.com/search?q=cache:{url}"
-            r2 = session.get(alt_url, headers=HEADERS, timeout=30)
-            if r2.status_code == 200 and len(r2.text) > 1000:
-                log("Using webcache as fallback")
-                return r2.text, url
+        text = result.stdout
+        if "Sorry, something went wrong" in text or "We're working on getting this fixed" in text:
             log("Got error page from Meta")
             return None, url
-        return r.text, r.url
+        return text, url
     except Exception as e:
         log(f"Error: {e}")
         return None, url
