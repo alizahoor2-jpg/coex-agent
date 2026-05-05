@@ -60,10 +60,10 @@ def fetch_page(url):
                 "-A", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 url
             ], capture_output=True, text=True, timeout=60)
-if result.stdout and len(result.stdout) > 1000:
-            text = result.stdout
-            if "Sorry, something went wrong" not in text and "We're working on getting this fixed" not in text:
-                return text, url
+            if result.stdout and len(result.stdout) > 1000:
+                text = result.stdout
+                if "Sorry, something went wrong" not in text and "We're working on getting this fixed" not in text:
+                    return text, url
         except:
             pass
         
