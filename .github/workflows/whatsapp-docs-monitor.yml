@@ -6,6 +6,8 @@ on:
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -21,3 +23,11 @@ jobs:
         
       - name: Run monitor
         run: python whatsapp-docs-monitor/monitor.py
+        
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add whatsapp-docs-monitor/stored_page.txt 2>/dev/null || exit 0
+          git commit -m "Update stored page" 2>/dev/null || exit 0
+          git push || echo "No changes to push"
