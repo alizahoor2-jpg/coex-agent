@@ -99,7 +99,7 @@ def main():
     elif new_hash == last_hash:
         send_email("Coex Updates - NO CHANGES", "No changes detected.", config)
     else:
-        send_email("Coex Updates", "Changes detected in docs.", config)
+        send_email("Coex Updates", "Changes detected in docs. Check: " + URL, config)
         save_last_hash(new_hash)
     
     # Push hash back to repo for next run
