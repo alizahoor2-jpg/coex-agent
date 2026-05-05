@@ -7,7 +7,6 @@ import os
 import json
 import hashlib
 import smtplib
-import difflib
 import requests
 from datetime import datetime
 from email.mime.text import MIMEText
@@ -21,7 +20,13 @@ LOG_FILE = SCRIPT_DIR / "monitor.log"
 
 URL = "https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/"
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36"}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+}
 
 def log(msg):
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -41,18 +46,42 @@ def load_config():
 
 def fetch_page(url):
     try:
-        r = requests.get(url, headers=HEADERS, timeout=30)
+        session = requests.Session()
+        r = session.get(url, headers=HEADERS, timeout=60)
+        # Check if we got a real page or error
+        if "Sorry, something went wrong" in r.text or "We're working on getting this fixed" in r.text:
+            log("Got error page from Meta")
+            return None, url
         return r.text, r.url
     except Exception as e:
         log(f"Error: {e}")
         return None, url
 
 def extract_content(html):
+    if not html:
+        return ""
     soup = BeautifulSoup(html, "html.parser")
-    for s in soup(["script", "style", "nav", "footer", "header"]):
+    
+    # Remove unwanted elements
+    for s in soup(["script", "style", "nav", "footer", "header", "aside"]):
         s.decompose()
-    text = soup.get_text(separator="\n", strip=True)
-    return "\n".join(l.strip() for l in text.split("\n") if l.strip())
+    
+    # Get main content
+    main = soup.find("article") or soup.find("main") or soup.find("div", {"role": "main"})
+    if main:
+        text = main.get_text(separator="\n", strip=True)
+    else:
+        text = soup.get_text(separator="\n", strip=True)
+    
+    # Filter to get meaningful content only
+    lines = []
+    for line in text.split("\n"):
+        line = line.strip()
+        # Skip short lines and navigation items
+        if len(line) > 20 and not line.startswith("#") and not line.startswith("http"):
+            lines.append(line)
+    
+    return "\n".join(lines)
 
 def get_hash(content):
     return hashlib.sha256(content.encode()).hexdigest()
@@ -65,19 +94,15 @@ def load_snapshot():
 def save_snapshot(content):
     SNAPSHOT_FILE.write_text(content)
 
-def diff_content(old_content, new_content):
+def analyze_changes(old_content, new_content):
     old_lines = old_content.split("\n")
     new_lines = new_content.split("\n")
     
-    diff = list(difflib.unified_diff(old_lines, new_lines, lineterm="", n=3))
-    return "\n".join(diff)
-
-def analyze_changes(old_content, new_content):
-    old_lines = set(old_content.split("\n"))
-    new_lines = set(new_content.split("\n"))
+    old_set = set(old_lines)
+    new_set = set(new_lines)
     
-    added = new_lines - old_lines
-    removed = old_lines - new_lines
+    added = [l for l in new_lines if l not in old_set]
+    removed = [l for l in old_lines if l not in new_set]
     
     return added, removed
 
@@ -102,53 +127,70 @@ def main():
     config = load_config()
     
     html, url = fetch_page(URL)
+    
     if not html:
-        send_email("Coex Updates - ERROR", "Could not fetch page", config)
+        # Check if we have a previous snapshot
+        old = load_snapshot()
+        if old:
+            send_email("Coex Updates - ERROR", "Could not fetch page (may be blocked). Will retry next run.", config)
+        else:
+            send_email("Coex Updates - ERROR", "Could not fetch page on first run.", config)
         return
     
     content = extract_content(html)
+    
+    # Check if we got meaningful content
+    if len(content) < 500:
+        send_email("Coex Updates - ERROR", f"Got empty/error page ({len(content)} chars). Page may be blocked.", config)
+        return
+    
     old_content = load_snapshot()
     new_hash = get_hash(content)
     
     if old_content is None:
         save_snapshot(content)
-        send_email("Coex Updates - BASELINE SET", "First run complete. Monitoring started.", config)
+        send_email("Coex Updates - BASELINE SET", f"First run complete. {len(content)} chars saved.", config)
     else:
         old_hash = get_hash(old_content)
         if new_hash == old_hash:
             send_email("Coex Updates - NO CHANGES", "No changes detected in docs.", config)
         else:
-            # Get detailed changes
-            added_lines, removed_lines = analyze_changes(old_content, content)
+            added, removed = analyze_changes(old_content, content)
             
-            # Build detailed email
+            # Build detailed email with actual sentences
             body = []
-            body.append("=" * 50)
+            body.append("=" * 60)
             body.append("DOCS CHANGE DETECTED")
-            body.append("=" * 50)
-            body.append(f"URL: {URL}")
-            body.append("")
-            body.append(f"Lines added: {len(added_lines)}")
-            body.append(f"Lines removed: {len(removed_lines)}")
+            body.append("=" * 60)
+            body.append(f"Page: {URL}")
+            body.append(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
             body.append("")
             
-            if added_lines:
-                body.append("--- NEW LINES ---")
-                for line in sorted(added_lines)[:20]:
-                    body.append(f"+ {line}")
-                if len(added_lines) > 20:
-                    body.append(f"... and {len(added_lines) - 20} more")
+            # Filter to get real content changes (sentences, not fragments)
+            real_added = [l for l in added if len(l) > 30 and not l.isupper()]
+            real_removed = [l for l in removed if len(l) > 30 and not l.isupper()]
+            
+            body.append(f"NEW sentences/paragraphs: {len(real_added)}")
+            body.append(f"REMOVED sentences/paragraphs: {len(real_removed)}")
+            body.append("")
+            
+            if real_added:
+                body.append("--- NEW CONTENT ---")
+                for line in real_added[:10]:
+                    body.append(f"+ {line[:200]}")
+                if len(real_added) > 10:
+                    body.append(f"... and {len(real_added) - 10} more")
                 body.append("")
             
-            if removed_lines:
-                body.append("--- REMOVED LINES ---")
-                for line in sorted(removed_lines)[:20]:
-                    body.append(f"- {line}")
-                if len(removed_lines) > 20:
-                    body.append(f"... and {len(removed_lines) - 20} more")
+            if real_removed:
+                body.append("--- REMOVED CONTENT ---")
+                for line in real_removed[:10]:
+                    body.append(f"- {line[:200]}")
+                if len(real_removed) > 10:
+                    body.append(f"... and {len(real_removed) - 10} more")
                 body.append("")
             
-            body.append("=" * 50)
+            body.append("=" * 60)
             
             send_email("Coex Updates", "\n".join(body), config)
             save_snapshot(content)
@@ -156,7 +198,7 @@ def main():
             # Push updated snapshot back to repo
             try:
                 import subprocess
-                subprocess.run(["git", "add", "previous_snapshot.txt"], cwd=SCRIPT_DIR, capture_output=True)
+                subprocess.run(["git", "add", "snapshots/"], cwd=SCRIPT_DIR, capture_output=True)
                 subprocess.run(["git", "commit", "-m", "Update snapshot"], cwd=SCRIPT_DIR, capture_output=True)
                 subprocess.run(["git", "push"], cwd=SCRIPT_DIR, capture_output=True)
             except:
