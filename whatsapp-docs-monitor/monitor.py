@@ -505,6 +505,14 @@ def main():
     
     if content:
         save_last_hash(get_content_hash(content))
+        # Push updated hash back to repo for next run
+        try:
+            import subprocess
+            subprocess.run(["git", "add", "whatsapp-docs-monitor/last_hash.txt"], cwd=SCRIPT_DIR.parent, check=True)
+            subprocess.run(["git", "commit", "-m", "Update hash"], cwd=SCRIPT_DIR.parent, check=True)
+            subprocess.run(["git", "push"], cwd=SCRIPT_DIR.parent, check=True)
+        except:
+            pass
 
     log("")
     log(f"Checked: {len(URLS)}, Changes: {total_changes}")
