@@ -102,6 +102,15 @@ def main():
         send_email("Coex Updates", "Changes detected in docs.", config)
         save_last_hash(new_hash)
     
+    # Push hash back to repo for next run
+    try:
+        import subprocess
+        subprocess.run(["git", "add", "-A"], cwd=SCRIPT_DIR, capture_output=True)
+        subprocess.run(["git", "commit", "-m", "Update hash"], cwd=SCRIPT_DIR, capture_output=True)
+        subprocess.run(["git", "push"], cwd=SCRIPT_DIR, capture_output=True)
+    except:
+        pass
+    
     log("Done.")
 
 if __name__ == "__main__":
