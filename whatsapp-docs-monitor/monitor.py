@@ -35,11 +35,11 @@ def log(msg):
         f.write(f"[{ts}] {msg}\n")
 
 def fetch_page(url):
-    """Fetch the page using curl"""
+    """Fetch the page using curl with iPhone user-agent"""
     try:
         result = subprocess.run([
             "curl", "-s", "-L",
-            "-A", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "-A", "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
             url
         ], capture_output=True, text=True, timeout=60)
         
