@@ -21,11 +21,17 @@ LOG_FILE = SCRIPT_DIR / "monitor.log"
 URL = "https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Cache-Control": "max-age=0",
 }
 
 def log(msg):
@@ -47,9 +53,19 @@ def load_config():
 def fetch_page(url):
     try:
         session = requests.Session()
+        # Get cookies first
+        session.get("https://facebook.com", headers=HEADERS, timeout=30)
+        # Now try the actual page
         r = session.get(url, headers=HEADERS, timeout=60)
+        
         # Check if we got a real page or error
         if "Sorry, something went wrong" in r.text or "We're working on getting this fixed" in r.text:
+            # Try alternative URL via webcache
+            alt_url = f"https://webcache.googleusercontent.com/search?q=cache:{url}"
+            r2 = session.get(alt_url, headers=HEADERS, timeout=30)
+            if r2.status_code == 200 and len(r2.text) > 1000:
+                log("Using webcache as fallback")
+                return r2.text, url
             log("Got error page from Meta")
             return None, url
         return r.text, r.url
