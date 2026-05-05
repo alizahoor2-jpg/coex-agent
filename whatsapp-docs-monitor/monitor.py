@@ -488,19 +488,15 @@ def main():
         log("FIRST RUN: Baseline snapshots saved. No email sent.")
         log("Subsequent runs will detect and report changes.")
     elif total_changes >= 1:
-        # Send update email
         subject = "Coex Updates"
         body = build_email_body(all_changes, new_pages, removed_pages)
         send_email(subject, body, config)
-        # Update snapshots after sending - next run compares against new baseline (no repeat emails)
         for name, data in all_changes.items():
-            # Find slug for this page
             for page_info in URLS:
                 if page_info["name"] == name:
                     save_snapshot(page_info["slug"], data["new_content"], data["url"])
                     break
     else:
-        # No changes - short email
         send_email("Coex Updates - NO CHANGES", "No changes detected.", config)
 
     # Summary
