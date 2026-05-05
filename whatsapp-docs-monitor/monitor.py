@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
-SNAPSHOT_FILE = SCRIPT_DIR / "previous_snapshot.txt"
+SNAPSHOT_FILE = SCRIPT_DIR / "snapshots" / "onboarding-business-app-users.txt"
 LOG_FILE = SCRIPT_DIR / "monitor.log"
 
 URL = "https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/"
