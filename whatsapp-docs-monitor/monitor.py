@@ -53,18 +53,24 @@ def load_config():
 def fetch_page(url):
     try:
         import subprocess
-        # Use curl to fetch the page
-        result = subprocess.run([
-            "curl", "-s", "-L", 
-            "-A", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-            url
-        ], capture_output=True, text=True, timeout=60)
+        # Try curl first (better for bypassing blocks)
+        try:
+            result = subprocess.run([
+                "curl", "-s", "-L", 
+                "-A", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                url
+            ], capture_output=True, text=True, timeout=60)
+if result.stdout and len(result.stdout) > 1000:
+            text = result.stdout
+            if "Sorry, something went wrong" not in text and "We're working on getting this fixed" not in text:
+                return text, url
+        except:
+            pass
         
-        text = result.stdout
-        if "Sorry, something went wrong" in text or "We're working on getting this fixed" in text:
-            log("Got error page from Meta")
-            return None, url
-        return text, url
+        # Fallback to requests
+        session = requests.Session()
+        r = session.get(url, headers=HEADERS, timeout=60)
+        return r.text, r.url
     except Exception as e:
         log(f"Error: {e}")
         return None, url
