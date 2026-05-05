@@ -112,7 +112,7 @@ def main():
     
     if old_content is None:
         save_snapshot(content)
-        log("First run - baseline saved.")
+        send_email("Coex Updates - BASELINE SET", "First run complete. Monitoring started.", config)
     else:
         old_hash = get_hash(old_content)
         if new_hash == old_hash:
