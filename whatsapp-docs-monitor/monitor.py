@@ -146,6 +146,12 @@ def main():
     if stored_text is None:
         # First run - store and notify
         save_stored(current_text)
+        try:
+            subprocess.run(["git", "add", "stored_page.txt"], cwd=SCRIPT_DIR, capture_output=True)
+            subprocess.run(["git", "commit", "-m", "Baseline"], cwd=SCRIPT_DIR, capture_output=True)
+            subprocess.run(["git", "push"], cwd=SCRIPT_DIR, capture_output=True)
+        except:
+            pass
         send_email("Coex Updates - BASELINE SET", f"Monitoring started.\n\nPage saved: {len(current_text)} chars.")
         log(f"Baseline saved: {len(current_text)} chars")
         return
@@ -194,6 +200,15 @@ def main():
         
         # Save new version
         save_stored(current_text)
+        
+        # Push to git for next run
+        try:
+            subprocess.run(["git", "add", "stored_page.txt"], cwd=SCRIPT_DIR.parent, capture_output=True)
+            subprocess.run(["git", "commit", "-m", "Update stored page"], cwd=SCRIPT_DIR.parent, capture_output=True)
+            subprocess.run(["git", "push"], cwd=SCRIPT_DIR.parent, capture_output=True)
+        except:
+            pass
+        
         log(f"Changes: {len(added)} added, {len(removed)} removed")
     
     log("Done")
