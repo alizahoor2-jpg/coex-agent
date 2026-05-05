@@ -24,6 +24,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SNAPSHOTS_DIR = SCRIPT_DIR / "snapshots"
 LOG_FILE = SCRIPT_DIR / "monitor.log"
+LAST_HASH_FILE = SCRIPT_DIR / "last_hash.txt"
 CONFIG_FILE = SCRIPT_DIR / "config.json"  # Kept for reference, not used
 
 # All WhatsApp Embedded Signup documentation URLs to monitor
@@ -398,6 +399,14 @@ def send_email(subject, body, config):
         return False
 
 
+def load_last_hash():
+    if LAST_HASH_FILE.exists():
+        return LAST_HASH_FILE.read_text().strip()
+    return None
+
+def save_last_hash(h):
+    LAST_HASH_FILE.write_text(h)
+
 def main():
     log("=" * 60)
     log("Starting WhatsApp Embedded Signup Docs Monitor")
@@ -405,6 +414,9 @@ def main():
 
     config = load_config()
     SNAPSHOTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Get last saved hash
+    last_hash = load_last_hash()
 
     # Check if this is the first run (no snapshots exist yet)
     existing_snapshots = list(SNAPSHOTS_DIR.glob("*.txt"))
@@ -449,7 +461,7 @@ def main():
         # Calculate hash of new content
         new_hash = get_content_hash(content)
 
-        # Save new snapshot
+        # Save new snapshot FIRST
         new_meta = save_snapshot(slug, content, final_url)
 
         if old_content is None:
@@ -480,28 +492,22 @@ def main():
 
     # Build email
     has_changes = len(all_changes) > 0 or len(new_pages) > 0 or len(removed_pages) > 0
-    
-    # Count total lines changed
     total_changes = sum(len(data["changes"]) for data in all_changes.values())
 
     if is_first_run:
-        log("FIRST RUN: Baseline snapshots saved. No email sent.")
-        log("Subsequent runs will detect and report changes.")
+        log("FIRST RUN: Baseline saved. No email sent.")
     elif total_changes >= 1:
         subject = "Coex Updates"
         body = build_email_body(all_changes, new_pages, removed_pages)
         send_email(subject, body, config)
-        for name, data in all_changes.items():
-            for page_info in URLS:
-                if page_info["name"] == name:
-                    save_snapshot(page_info["slug"], data["new_content"], data["url"])
-                    break
     else:
-        send_email("Coex Updates - NO CHANGES", "No changes detected.", config)
+        send_email("Coex Updates - NO CHANGES", "No changes detected.")
+    
+    if content:
+        save_last_hash(get_content_hash(content))
 
-    # Summary
     log("")
-    log("=" * 60)
+    log(f"Checked: {len(URLS)}, Changes: {total_changes}")
     log(f"Monitoring complete:")
     log(f"  Pages checked: {len(URLS)}")
     log(f"  Pages changed: {len(all_changes)}")
