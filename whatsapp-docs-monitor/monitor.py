@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-WhatsApp Embedded Signup Docs Monitor - Simple version
+WhatsApp Embedded Signup Docs Monitor - Detailed version
 """
 
 import os
 import json
 import hashlib
 import smtplib
+import difflib
 import requests
 from datetime import datetime
 from email.mime.text import MIMEText
@@ -15,7 +16,7 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
-LAST_HASH_FILE = SCRIPT_DIR / "last_hash.txt"
+SNAPSHOT_FILE = SCRIPT_DIR / "previous_snapshot.txt"
 LOG_FILE = SCRIPT_DIR / "monitor.log"
 
 URL = "https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/"
@@ -56,13 +57,29 @@ def extract_content(html):
 def get_hash(content):
     return hashlib.sha256(content.encode()).hexdigest()
 
-def load_last_hash():
-    if LAST_HASH_FILE.exists():
-        return LAST_HASH_FILE.read_text().strip()
+def load_snapshot():
+    if SNAPSHOT_FILE.exists():
+        return SNAPSHOT_FILE.read_text()
     return None
 
-def save_last_hash(h):
-    LAST_HASH_FILE.write_text(h)
+def save_snapshot(content):
+    SNAPSHOT_FILE.write_text(content)
+
+def diff_content(old_content, new_content):
+    old_lines = old_content.split("\n")
+    new_lines = new_content.split("\n")
+    
+    diff = list(difflib.unified_diff(old_lines, new_lines, lineterm="", n=3))
+    return "\n".join(diff)
+
+def analyze_changes(old_content, new_content):
+    old_lines = set(old_content.split("\n"))
+    new_lines = set(new_content.split("\n"))
+    
+    added = new_lines - old_lines
+    removed = old_lines - new_lines
+    
+    return added, removed
 
 def send_email(subject, body, config):
     msg = MIMEMultipart()
@@ -90,26 +107,60 @@ def main():
         return
     
     content = extract_content(html)
+    old_content = load_snapshot()
     new_hash = get_hash(content)
-    last_hash = load_last_hash()
     
-    if last_hash is None:
-        save_last_hash(new_hash)
-        log("Baseline saved.")
-    elif new_hash == last_hash:
-        send_email("Coex Updates - NO CHANGES", "No changes detected.", config)
+    if old_content is None:
+        save_snapshot(content)
+        log("First run - baseline saved.")
     else:
-        send_email("Coex Updates", "Changes detected in docs. Check: " + URL, config)
-        save_last_hash(new_hash)
-    
-    # Push hash back to repo for next run
-    try:
-        import subprocess
-        subprocess.run(["git", "add", "-A"], cwd=SCRIPT_DIR, capture_output=True)
-        subprocess.run(["git", "commit", "-m", "Update hash"], cwd=SCRIPT_DIR, capture_output=True)
-        subprocess.run(["git", "push"], cwd=SCRIPT_DIR, capture_output=True)
-    except:
-        pass
+        old_hash = get_hash(old_content)
+        if new_hash == old_hash:
+            send_email("Coex Updates - NO CHANGES", "No changes detected in docs.", config)
+        else:
+            # Get detailed changes
+            added_lines, removed_lines = analyze_changes(old_content, content)
+            
+            # Build detailed email
+            body = []
+            body.append("=" * 50)
+            body.append("DOCS CHANGE DETECTED")
+            body.append("=" * 50)
+            body.append(f"URL: {URL}")
+            body.append("")
+            body.append(f"Lines added: {len(added_lines)}")
+            body.append(f"Lines removed: {len(removed_lines)}")
+            body.append("")
+            
+            if added_lines:
+                body.append("--- NEW LINES ---")
+                for line in sorted(added_lines)[:20]:
+                    body.append(f"+ {line}")
+                if len(added_lines) > 20:
+                    body.append(f"... and {len(added_lines) - 20} more")
+                body.append("")
+            
+            if removed_lines:
+                body.append("--- REMOVED LINES ---")
+                for line in sorted(removed_lines)[:20]:
+                    body.append(f"- {line}")
+                if len(removed_lines) > 20:
+                    body.append(f"... and {len(removed_lines) - 20} more")
+                body.append("")
+            
+            body.append("=" * 50)
+            
+            send_email("Coex Updates", "\n".join(body), config)
+            save_snapshot(content)
+            
+            # Push updated snapshot back to repo
+            try:
+                import subprocess
+                subprocess.run(["git", "add", "previous_snapshot.txt"], cwd=SCRIPT_DIR, capture_output=True)
+                subprocess.run(["git", "commit", "-m", "Update snapshot"], cwd=SCRIPT_DIR, capture_output=True)
+                subprocess.run(["git", "push"], cwd=SCRIPT_DIR, capture_output=True)
+            except:
+                pass
     
     log("Done.")
 
