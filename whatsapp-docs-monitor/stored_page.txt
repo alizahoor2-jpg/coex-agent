@@ -560,8 +560,6 @@ Example payload
 "initiated_by": "SYSTEM"
 "field": "account_update"
 disconnection_info
-object is part of a gradual rollout so may not be available to you immediately.
-disconnection_info
 object contains:
 — Why your client was disconnected. Values:
 ACCOUNT_DISCONNECTED
