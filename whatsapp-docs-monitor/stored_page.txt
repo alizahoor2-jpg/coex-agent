@@ -18,6 +18,7 @@ Custom marketing templates
 Call permission request message template
 Coupon code templates
 Limited-time-offer templates
+Location templates
 Media card carousel templates
 Measure conversions
 Track click events
