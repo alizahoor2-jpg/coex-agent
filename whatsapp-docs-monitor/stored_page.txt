@@ -232,40 +232,10 @@ Assigned WhatsApp Business Accounts API
 WhatsApp Incoming Webhook Payload
 WhatsApp Account Number
 WhatsApp Account Number API
-WhatsApp Business Account
-Assigned Users Management API
-Conversational Automation API
-Extended Credits API
-Phone Number Management API
-Schedules API
-Subscribed Apps API
-Template API
-WhatsApp Business Account API
-WhatsApp Business Account Activities API
-WhatsApp Business Account Solutions List API
 WhatsApp Business Account Migration Intent
 Migration Intent Details API
 WhatsApp Business Bot
 Bot Details API
-WhatsApp Business Phone Number
-Business Compliance Information API
-Business Encryption API
-Calling API
-Commerce Settings API
-Groups Management API
-Marketing Messages Lite API
-Media Upload API
-Message API
-Phone Number Deregister API
-Phone Number Registration
-Phone Number Verification Request Code API
-Settings API
-Verify Code API
-WhatsApp Business Account Official Business Account Status API
-WhatsApp Business Account Phone Number API
-WhatsApp Business Profile API
-WhatsApp Business QR Code API
-WhatsApp Business QR Code Management API
 WhatsApp Business Pre Verified Phone Number
 Request Verification Code API
 Verify Code API
