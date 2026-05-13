@@ -88,6 +88,7 @@ Bypassing phone number screens
 Making website optional
 App-only install
 Automatic Events
+v4 public preview
 v3 public preview
 v2 public preview
 Onboard Business app users (Coexistence)
