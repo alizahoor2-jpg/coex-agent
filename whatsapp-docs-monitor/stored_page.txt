@@ -285,6 +285,10 @@ Solution Reject API
 Error codes
 Onboard WhatsApp Business app users
 Apr 20, 2026
+Embedded signup v2 will be deprecated on October 15, 2026.
+Migrate your integration to
+before that date to avoid disruption. See
+for the full upgrade path.
 This feature is sometimes referred to as “Coexistence” in support channels and Partner documentation.
 You can configure
 Embedded Signup
