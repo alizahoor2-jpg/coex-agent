@@ -34,6 +34,7 @@ Authenticating users
 Error signals
 Authentication templates
 One-tap autofill
+Keyboard suggestions
 Bulk management
 Service messages
 Types of messages
