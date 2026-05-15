@@ -8,7 +8,7 @@ About the platform
 Access tokens
 Permissions
 Authentication-international rates
-Conversation-based pricing
+Conversation-based pricing (Deprecated)
 AI Providers
 Get started
 Marketing messages
