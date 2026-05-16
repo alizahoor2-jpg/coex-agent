@@ -25,6 +25,8 @@ Track click events
 View metrics
 Send marketing messages
 Onboard business customers
+Set a max price
+Enroll in max price
 Utility messages
 Utility templates
 Call permission request templates
