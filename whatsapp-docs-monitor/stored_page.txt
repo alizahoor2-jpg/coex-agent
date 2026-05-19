@@ -95,6 +95,7 @@ v4 public preview
 v3 public preview
 v2 public preview
 Onboard Business app users (Coexistence)
+Reconnect offboarded coexistence clients
 Partner-initiated WABA creation
 Multi-Partner Solutions
 Embedded Creation
