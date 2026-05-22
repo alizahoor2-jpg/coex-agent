@@ -288,7 +288,7 @@ Solution Details API
 Solution Reject API
 Error codes
 Onboard WhatsApp Business app users
-Apr 20, 2026
+May 21, 2026
 Embedded signup v2 will be deprecated on October 15, 2026.
 Migrate your integration to
 before that date to avoid disruption. See
@@ -362,7 +362,7 @@ Voice and video calls
 Not supported.
 Business tools (eg. catalog, orders, status)
 Not supported.
-Messaging tools (e.g., marketing messages, greeting message, away message, quick replies, labels)
+Messaging tools (for example, marketing messages, greeting message, away message, quick replies, labels)
 Not supported.
 Business profile (eg. business name, address, website)
 Not supported.
@@ -405,7 +405,7 @@ portion of the Embedded Signup implementation code.
 "sessionInfoVersion": "3"
 To verify that you have enabled the feature correctly, access your implementation of Embedded Signup. If the
 WABA selection screen
-has been replaced with a screen that gives you the option to connect your existing WhatsApp Business account, the feature is enabled:
+has been replaced with a screen that gives you the option to connect your existing WhatsApp Business Account, the feature is enabled:
 Step 3: Surface Embedded Signup to customers
 Once you have confirmed that the feature has been enabled, surface Embedded Signup to your business customers.
 Note that when a business completes the flow and you
