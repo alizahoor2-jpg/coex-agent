@@ -360,11 +360,11 @@ Existing Broadcast Lists will become read-only.
 Not supported.
 Voice and video calls
 Not supported.
-Business tools (eg. catalog, orders, status)
+Business tools (for example, catalog, orders, status)
 Not supported.
 Messaging tools (for example, marketing messages, greeting message, away message, quick replies, labels)
 Not supported.
-Business profile (eg. business name, address, website)
+Business profile (for example, business name, address, website)
 Not supported.
 Not supported.
 Linked devices
@@ -592,7 +592,7 @@ initiated_by
 account_update webhook reference
 for full details.
 account_offboarded
-Describes changes to a WhatsApp Business Account (“WABA”) when the business off boards due to device change or re-registration.
+Describes changes to a WhatsApp Business Account (“WABA”) when the business offboards due to device change or re-registration.
 Trigger events
 The business phone number associated with the WABA changes devices and re-registers.
 The WABA’s status changes due to the business offboarding their WhatsApp Business app phone number.
@@ -611,9 +611,9 @@ Example payload
 "field": "account_update"
 "object": "whatsapp_business_account"
 account_reconnected
-Describes when a WhatsApp Business Account (“WABA”) reconnects (re-onboards) after previously off boarding.
+Describes when a WhatsApp Business Account (“WABA”) reconnects (re-onboards) after previously offboarding.
 Trigger events
-The business re-onboards to the same partner after off boarding.
+The business re-onboards to the same partner after offboarding.
 The WABA’s status changes to reconnected.
 Payload syntax
 "id": "<WABA_ID>",
@@ -632,7 +632,7 @@ Example payload
 Describes edit events and payload contents for the WhatsApp Business Account messages webhook for replies to interactive messages.
 Trigger events
 A WhatsApp user edits a previously sent message (text, media with caption).
-A WhatsApp user edits a previous sent message within 15 minutes after being sent.
+A WhatsApp user edits a previously sent message within 15 minutes after being sent.
 Payload syntax
 "object": "whatsapp_business_account",
 "id": "<WHATSAPP_BUSINESS_ACCOUNT_ID>",
@@ -732,7 +732,7 @@ This example webhook describes an edit made by a user in a message.
 This reference describes revoke events and payload contents for the WhatsApp Business Account messages webhook for replies to interactive messages.
 Trigger events
 A WhatsApp user revokes (deletes) a previously sent message.
-A WhatsApp user revokes a previous sent message within two days after being sent.
+A WhatsApp user revokes a previously sent message within two days after being sent.
 "object": "whatsapp_business_account",
 "id": "<WHATSAPP_BUSINESS_ACCOUNT_ID>",
 "changes": [
@@ -1062,7 +1062,7 @@ Indicates if the business customer added, edited, or deleted a contact from thei
 — the business added or edited a contact
 — the business removed a contact
 <CONTACT_CHANGE_TIMESTAMP>
-Unix timestamp indicated when the contact was added, edited, or removed.
+Unix timestamp indicating when the contact was added, edited, or removed.
 smb_message_echoes
 Describes a message sent by a business customer to a WhatsApp user with the WhatsApp Business app or supported
 companion device
@@ -1104,7 +1104,7 @@ The WhatsApp user’s phone number.
 WhatsApp message ID.
 wamid.HBgLMTY0NjcwNDM1OTUVAgARGBIyNDlBOEI5QUQ4NDc0N0FCNjMA
 <WEBHOOK_TIMESTAMP>
-Unix timestamp indicated when the webhook was triggered.
+Unix timestamp indicating when the webhook was triggered.
 <MESSAGE_TYPE>
 Message type
 . Note that this placeholder appears twice in the syntax above, as it serves as a placeholder for the
