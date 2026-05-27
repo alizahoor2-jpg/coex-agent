@@ -8,9 +8,9 @@ About the platform
 Access tokens
 Permissions
 Authentication-international rates
-Conversation-based pricing (Deprecated)
 AI Providers
 Change billing currency via API
+Conversation-based pricing (Deprecated)
 Get started
 Marketing messages
 Get started
