@@ -1,8 +1,6 @@
 Developer Platform
 WhatsApp Business Platform
 WhatsApp Business Platform
-Business Messaging
-WhatsApp Business Platform
 WhatsApp Business Platform
 About the platform
 Access tokens
