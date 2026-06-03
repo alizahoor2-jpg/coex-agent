@@ -184,6 +184,8 @@ Business profiles
 Display names
 Official Business Accounts
 WhatsApp Business Accounts
+Account model evolution
+Managing messaging accounts
 QR codes and message links
 Timezone IDs
 Ads that click to WhatsApp
