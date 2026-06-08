@@ -26,6 +26,7 @@ Send marketing messages
 Onboard business customers
 Set a max price
 Enroll in max price
+In-App Signup
 Utility messages
 Utility templates
 Call permission request templates
