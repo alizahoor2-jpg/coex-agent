@@ -1,5 +1,5 @@
 Onboard WhatsApp Business app users
-May 21, 2026
+Jun 16, 2026
 Embedded signup v2 will be deprecated on October 15, 2026.
 Migrate your integration to
 before that date to avoid disruption. See
@@ -94,7 +94,7 @@ Step 1: Subscribe to webhooks
 Navigate to the
 App Dashboard
 Configuration
-panel and subscribe your app to the following WhatsApp Business Account webhook topic fields, and make sure your app’s callback code can digest payloads for each of them. Note that these fields are in addition to any fields you are already subscribed to as a solution provider.
+panel and subscribe your app to the following WhatsApp Business account webhook topic fields, and make sure your app’s callback code can digest payloads for each of them. Note that these fields are in addition to any fields you are already subscribed to as a partner.
 — describes past messages the business customer has sent/received
 smb_app_state_sync
 — describes the business customer’s current and new contacts
@@ -116,21 +116,21 @@ portion of the Embedded Signup implementation code.
 "sessionInfoVersion": "3"
 To verify that you have enabled the feature correctly, access your implementation of Embedded Signup. If the
 WABA selection screen
-has been replaced with a screen that gives you the option to connect your existing WhatsApp Business Account, the feature is enabled:
+has been replaced with a screen that gives you the option to connect your existing WhatsApp Business account, the feature is enabled:
 Step 3: Surface Embedded Signup to customers
 Once you have confirmed that the feature has been enabled, surface Embedded Signup to your business customers.
 Note that when a business completes the flow and you
 onboard the customer
 , you have 24 hours to
 synchronize their messaging history
-, otherwise they must be offboarded and they must complete the flow again. For this reason, we recommend that you:
+, otherwise they must be offboarded and they must complete the flow again. For this reason:
 onboard and synchronize as soon as the business completes the flow
 inform the business that you are synchronizing their WhatsApp Business app data
 advise them to keep the WhatsApp Business app open to facilitate the synchronization process
-Onboarding and synchronization can take several minutes, depending on a number of factors such as the size of the business’s messaging history, their internet speed, how quickly you can digest webhooks, etc.
+Onboarding and synchronization can take several minutes, depending on a number of factors such as the size of the business’s messaging history, their internet speed, and how quickly you can digest webhooks.
 When you complete the
 process, the WhatsApp Business app will automatically refresh and indicate to the business that their number is now connected to the API:
-After you finish synchronizing the business’s messaging history, we recommend that you inform the customer that the process is complete.
+After you finish synchronizing the business’s messaging history, inform the customer that the process is complete.
 Onboarding business customers
 When a business customer successfully completes the Embedded Signup flow, their asset IDs and an exchangeable token code will be returned to the window that spawned the flow, as normal, but the
 session event
@@ -142,7 +142,7 @@ event: "FINISH_WHATSAPP_BUSINESS_APP_ONBOARDING",
 Capture the customer’s asset IDs and exchangeable token code and use them to onboard the customer as you normally would, but
 skip the phone number registration step
 , as the number is already registered.
-Onboarding business customers as a Solution Provider
+Onboarding business customers as a partner
 Onboarding business customers as a Tech Provider
 Once you have completed these onboarding steps, you can begin the
 messaging history synchronization
@@ -163,7 +163,7 @@ platform_type
 "platform_type": "CLOUD_API",
 "id": "106540352242922"
 Synchronizing WhatsApp Business app data
-After you onboard the business customer, you have 24 hours to synchronize their contacts and messaging history, otherwise they must be offboarded and complete the flow again. For this reason, we recommend that you begin the synchronization process as soon as you finish onboarding the business.
+After you onboard the business customer, you have 24 hours to synchronize their contacts and messaging history, otherwise they must be offboarded and complete the flow again. For this reason, begin the synchronization process as soon as you finish onboarding the business.
 As a reminder, make sure that you subscribed to the business’s WABA when you
 onboarded the business
 , and that you are
@@ -189,12 +189,11 @@ Example response
 Upon success:
 "messaging_product": "whatsapp",
 "request_id" : "<REQUEST_ID>"
-We recommend that you store the
 value in case you need to contact support.
 Step 2: Initiate message history synchronization
 SMB App Data API
 again, this time to initiate messaging history synchronization.
-Upon success, one or more history webhooks will be triggered, depending on if the business chose to share their messaging history with you.
+Upon success, zero, one, or more history webhooks will be triggered, depending on if the business chose to share their messaging history with you.
 Note that you can only perform this step once. If you need to perform it again, the customer must first offboard, then complete the Embedded Signup flow again.
 Messaging history shared
 If the business chose to share their messaging history with you, a series of history webhooks will be triggered, describing each message sent to, or received from, WhatsApp users within a set period of time.
@@ -214,7 +213,6 @@ Example response
 If the request is successful, the API will respond with the following JSON payload. Note that this response only indicates successful acceptance of the request, it does not indicate if the business shared or their messaging history with you.
 "messaging_product": "whatsapp",
 "request_id" : "<REQUEST_ID>"
-We recommend that you store the
 value in case you need to contact support.
 Step 3: Mirror new WhatsApp Business app messages
 Onboarded businesses are still able to use the WhatsApp Business app and supported
@@ -223,7 +221,7 @@ to send and receive messages. Each time a business sends a message with one of t
 smb_message_echoes
 webhook, which you must digest and display in the contact message thread history in your app.
 Reporting conversion activity
-Onboarded business customers may run Click to WhatsApp ads, so we recommend that you report purchase/lead-gen signals on behalf of the business using the Conversions API. See
+Onboarded business customers may run Click to WhatsApp ads, so report purchase/lead-gen signals on behalf of the business using the Conversions API. See
 Conversions API for business messaging
 Offboarding business customers
 You cannot use the
@@ -254,7 +252,7 @@ companion device
 sends or receives a message to or from your business.
 If you receive this webhook, instruct the business to check the WhatsApp Business app for the message.
 account_update
-Describes changes to a WhatsApp Business Account (“WABA”).
+Describes changes to a WhatsApp Business account (“WABA”).
 Trigger events
 the business phone number associated with the WABA changes
 the WABA’s status changes
@@ -303,7 +301,7 @@ initiated_by
 account_update webhook reference
 for full details.
 account_offboarded
-Describes changes to a WhatsApp Business Account (“WABA”) when the business offboards due to device change or re-registration.
+Describes changes to a WhatsApp Business account (“WABA”) when the business offboards due to device change or re-registration.
 Trigger events
 The business phone number associated with the WABA changes devices and re-registers.
 The WABA’s status changes due to the business offboarding their WhatsApp Business app phone number.
@@ -322,7 +320,7 @@ Example payload
 "field": "account_update"
 "object": "whatsapp_business_account"
 account_reconnected
-Describes when a WhatsApp Business Account (“WABA”) reconnects (re-onboards) after previously offboarding.
+Describes when a WhatsApp Business account (“WABA”) reconnects (re-onboards) after previously offboarding.
 Trigger events
 The business re-onboards to the same partner after offboarding.
 The WABA’s status changes to reconnected.
@@ -340,7 +338,7 @@ Example payload
 "event": "ACCOUNT_RECONNECTED"
 "field": "account_update"
 "object": "whatsapp_business_account"
-Describes edit events and payload contents for the WhatsApp Business Account messages webhook for replies to interactive messages.
+Describes edit events and payload contents for the WhatsApp Business account messages webhook for replies to interactive messages.
 Trigger events
 A WhatsApp user edits a previously sent message (text, media with caption).
 A WhatsApp user edits a previously sent message within 15 minutes after being sent.
@@ -440,7 +438,7 @@ This example webhook describes an edit made by a user in a message.
 "id": "1234567890",
 "url": "https://media.example.com/updated-image.jpg"
 "field": "messages"
-This reference describes revoke events and payload contents for the WhatsApp Business Account messages webhook for replies to interactive messages.
+This reference describes revoke events and payload contents for the WhatsApp Business account messages webhook for replies to interactive messages.
 Trigger events
 A WhatsApp user revokes (deletes) a previously sent message.
 A WhatsApp user revokes a previously sent message within two days after being sent.
@@ -510,20 +508,17 @@ This example webhook describes a delete made by a user in a message.
 "original_message_id": "wamid.HBgLMTQxMjU1NTA4MjkVAgASGBQzQUNCNjk5RDUwNUZGMUZEM0VBRAA="
 "field": "messages"
 Describes the WhatsApp Business app chat history of a business that has chosen to share their chat history with a
-solution provider
 , or the business’s decision to decline chat history sharing.
 Trigger events
-a solution provider
 synchronizes the WhatsApp Business app chat history
 of a business customer who they have onboarded with a WhatsApp Business app phone number, and who has agreed to share their chat history
-a solution provider
 synchronizes the WhatsApp Business app chat history
 of a business customer who they have onboarded with a WhatsApp Business app phone number, but the customer has declined to share their chat history
 Chat history contents
-If the business has already approved chat history sharing when the solution provider requests the business’s chat history, a series of history webhooks will be triggered, describing all messages sent or received within 180 days of the time when the business was onboarded onto Cloud API.
+If the business has already approved chat history sharing when the partner requests the business’s chat history, a series of history webhooks will be triggered, describing all messages sent or received within 180 days of the time when the business was onboarded onto Cloud API.
 messages that are part of a group chat will not be included
 media messages will not include media asset IDs; instead, additional history webhooks containing media message asset IDs will be sent separately, but only for media messages sent within 14 days of onboarding
-Note that for efficiency purposes, a single webhook could potentially describe thousands of messages, so we recommend that you capture its contents first, then process the contents asynchronously.
+Note that for efficiency purposes, a single webhook could potentially describe thousands of messages, so capture its contents first, then process the contents asynchronously.
 Phases and chunks
 Webhooks are divided into three history phases, where day 0 indicates the time when the business was onboarded onto Cloud API:
 phase 0: day 0 through day 1
@@ -574,7 +569,7 @@ Payload contents — chat history sharing approved
 Placeholder
 Description
 Example value
-The business customer’s WhatsApp Business Account ID.
+The business customer’s WhatsApp Business account ID.
 102290129340398
 <BUSINESS_PHONE_NUMBER>
 The business customer’s business phone number.
@@ -723,10 +718,9 @@ Describes one or more
 WhatsApp contacts
 in a business customer’s WhatsApp Business app.
 Trigger events:
-a solution provider
 synchronizes the WhatsApp contacts
 of a business customer who they have onboarded with a WhatsApp Business app phone number
-a business customer, onboarded by a solution provider, with a WhatsApp Business app phone number adds, edits, or removes a
+a business customer, onboarded by a partner, with a WhatsApp Business app phone number adds, edits, or removes a
 WhatsApp contacts
 Payload syntax
 "object": "whatsapp_business_account",
@@ -751,7 +745,7 @@ Payload contents
 Placeholder
 Description
 Example value
-The business customer’s WhatsApp Business Account ID.
+The business customer’s WhatsApp Business account ID.
 102290129340398
 <BUSINESS_PHONE_NUMBER>
 The business customer’s business phone number.
@@ -800,7 +794,7 @@ Payload contents
 Placeholder
 Description
 Example value
-The business customer’s WhatsApp Business Account ID.
+The business customer’s WhatsApp Business account ID.
 102290129340398
 <BUSINESS_PHONE_NUMBER>
 The business customer’s business phone number.
