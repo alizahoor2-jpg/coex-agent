@@ -1,5 +1,5 @@
 Onboard WhatsApp Business app users
-Jun 16, 2026
+Jun 21, 2026
 Embedded signup v2 will be deprecated on October 15, 2026.
 Migrate your integration to
 before that date to avoid disruption. See
@@ -9,38 +9,39 @@ You can configure
 Embedded Signup
 to allow business customers to onboard using their existing
 WhatsApp Business app
-account and phone number. Customers who are successfully onboarded after choosing this option will then be able to use your app to message their customers at scale, but still have the ability to send messages on a one-to-one basis using the WhatsApp Business app, while keeping messaging history between both apps in sync.
+account and phone number. After a business customer chooses this option and onboards successfully, they can use your app to send high volumes of messages. They can still send messages on a one-to-one basis using the WhatsApp Business app, and WhatsApp keeps messaging history between both apps in sync.
 How it works
 When you configure Embedded Signup for WhatsApp Business app phone numbers, a business customer who goes through the flow will be given the option to connect their existing WhatsApp Business app account to Cloud API:
-If they choose this option and enter their WhatsApp Business app phone number, they will be presented a verification code to enter.
+If the business customer chooses to connect their existing account and enters their WhatsApp Business app phone number, WhatsApp presents a verification code to enter.
 The message instructs the business to copy the verification code and follow the steps:
 Expect to receive a message from the official Facebook Business Account. Click Connect:
 Tap the Connect to the Business Platform button to continue the onboarding process.
 Tap the Confirm button in the app to give the business the option to share their chat history with you.
 Paste the verification code.
-They can complete the remainder of the Embedded Signup flow. This returns their
+They can complete the remainder of the Embedded Signup flow. Completing the flow returns their
 exchangeable token code
-to the spawning window, as normal. You can then use that information in API calls to (1) onboard the business customer the same way you would any other business customer and (2) synchronize their contacts and messaging history (if permitted by the business) so you can populate it in your app.
+to the spawning window, as normal. You can then use this information in API calls to onboard the business customer the same way you would any other business customer. You can also synchronize their contacts and messaging history (if permitted by the business) so you can populate it in your app.
 Requirements
-the business customer must be using WhatsApp Business app version
-you must already be a
+The business customer must use WhatsApp Business app version
+You must already be a
 Solution Partner
 Tech Provider
-you must know how to use
-your webhook callback must be able successfully accept and digest webhooks
-you must be using Embedded Signup with
+You must know how to use
+Your webhook callback must be able to successfully accept and digest webhooks.
+You must use Embedded Signup with
 session logging
 Limitations
-In order to remain compatible with the WhatsApp Business app, business phone numbers that are in use with both the WhatsApp Business app and Cloud API have a fixed throughput of 20 mps.
+To remain compatible with the WhatsApp Business app, business phone numbers that are in use with both the WhatsApp Business app and Cloud API have a fixed throughput of 20 mps.
 If your business customer worked with a partner in the past and still shares the previous credit line, they may see an error when attempting to switch to a new partner. Follow the
 to resolve the error.
-After a business customer has been onboarded to Cloud API, messages sent by the business via the WhatsApp Business app will continue to be free, but messages sent via API will be subject to
+After a business customer has been onboarded to Cloud API, messages sent by the business via the WhatsApp Business app will continue to be free, but messages sent via Cloud API will be subject to
 Cloud API pricing
 API Solutions for WhatsApp Business App Users
 pricing explainer PDF for breakdowns of common pricing scenarios.
 Customer service window
-Customer service windows
-will only be opened when a WhatsApp user messages a business customer who is already onboarded onto Cloud API. If a WhatsApp user messages a business just prior to the business being onboarded onto Cloud API, the business can only respond with a template message, since no customer service was opened. If the user messages the business after it has been onboarded onto Cloud API, a customer service window will be opened as normal, and the business can then respond with a non-template message.
+WhatsApp opens a
+customer service window
+only when a WhatsApp user messages a business customer who is already onboarded onto Cloud API. If a WhatsApp user messages a business customer just before the business customer is onboarded onto Cloud API, the business customer can only respond with a template message, since WhatsApp opened no customer service window. If the WhatsApp user messages the business customer after onboarding onto Cloud API, WhatsApp opens a customer service window as normal, and the business customer can then respond with a non-template message.
 The 24-hour customer service window restriction applies to messages sent via Cloud API. Messages sent from the WhatsApp Business app are not subject to the customer service window and do not create, extend, or affect Cloud API conversation windows or Cloud API pricing.
 Feature comparison
 The following table describes features available to business customers who have been onboarded to Cloud API, as well as any changes to WhatsApp Business app functionality post-onboarding.
@@ -132,9 +133,9 @@ When you complete the
 process, the WhatsApp Business app will automatically refresh and indicate to the business that their number is now connected to the API:
 After you finish synchronizing the business’s messaging history, inform the customer that the process is complete.
 Onboarding business customers
-When a business customer successfully completes the Embedded Signup flow, their asset IDs and an exchangeable token code will be returned to the window that spawned the flow, as normal, but the
+When a business customer successfully completes the Embedded Signup flow, Embedded Signup returns their asset IDs and an exchangeable token code to the window that spawned the flow, as normal, but the
 session event
-payload will have
+payload sets
 FINISH_WHATSAPP_BUSINESS_APP_ONBOARDING
 waba_id: "<CUSTOMER_WABA_ID>"
 type: "WA_EMBEDDED_SIGNUP",
@@ -147,7 +148,7 @@ Onboarding business customers as a Tech Provider
 Once you have completed these onboarding steps, you can begin the
 messaging history synchronization
 Check onboarding status (optional)
-If you wish, you can check if the customer’s business phone number is registered for both Cloud API and WhatsApp Business app use by requesting the
+To confirm that the customer’s business phone number is registered for both Cloud API and WhatsApp Business app use, request the
 is_on_biz_app
 platform_type
 fields on the business phone number ID:
@@ -172,9 +173,9 @@ subscribed to the additional webhook fields
 Step 1: Initiate contacts synchronization
 SMB App Data API
 to request the business customer’s contacts information.
-If the request is successful, a set of
+If the request is successful, WhatsApp sends a set of
 smb_app_state_sync
-webhooks will be triggered describing the WhatsApp contacts in the business’s WhatsApp Business app. Future additions or changes to the business’s
+webhooks describing the WhatsApp contacts in the business’s WhatsApp Business app. Future additions or changes to the business’s
 WhatsApp contacts
 will trigger a corresponding smb_app_state_sync webhook.
 Note that you can only perform this step once. If you need to perform it again, the customer must first offboard, then complete the Embedded Signup flow again.
@@ -210,7 +211,7 @@ curl -X  POST \
 "messaging_product": "whatsapp",
 "sync_type": "history"
 Example response
-If the request is successful, the API will respond with the following JSON payload. Note that this response only indicates successful acceptance of the request, it does not indicate if the business shared or their messaging history with you.
+If the request is successful, the API will respond with the following JSON payload. Note that this response only indicates successful acceptance of the request; it does not indicate whether the business shared their messaging history with you.
 "messaging_product": "whatsapp",
 "request_id" : "<REQUEST_ID>"
 value in case you need to contact support.
@@ -245,7 +246,7 @@ webhook with error code
 First-time messaging
 : A WhatsApp user messages your business for the first time. This is especially common when users tap one of your
 ads that click to WhatsApp
-and immediately send a message. The error typically resolves within a few seconds, after which messages are delivered normally.
+and immediately send a message. The error typically resolves within a few seconds, after which WhatsApp delivers messages normally.
 Unsupported companion device
 : A WhatsApp user with an unsupported
 companion device
