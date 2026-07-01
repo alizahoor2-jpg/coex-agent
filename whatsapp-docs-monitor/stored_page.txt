@@ -1,5 +1,5 @@
 Onboard WhatsApp Business app users
-Jun 21, 2026
+Jun 26, 2026
 Embedded signup v2 will be deprecated on October 15, 2026.
 Migrate your integration to
 before that date to avoid disruption. See
@@ -14,9 +14,10 @@ How it works
 When you configure Embedded Signup for WhatsApp Business app phone numbers, a business customer who goes through the flow will be given the option to connect their existing WhatsApp Business app account to Cloud API:
 If the business customer chooses to connect their existing account and enters their WhatsApp Business app phone number, WhatsApp presents a verification code to enter.
 The message instructs the business to copy the verification code and follow the steps:
-Expect to receive a message from the official Facebook Business Account. Click Connect:
-Tap the Connect to the Business Platform button to continue the onboarding process.
-Tap the Confirm button in the app to give the business the option to share their chat history with you.
+Expect to receive a message from the official Facebook Business Account. Tap
+Connect to the Business Platform
+button to continue the onboarding process.
+button in the app to give the business the option to share their chat history with you.
 Paste the verification code.
 They can complete the remainder of the Embedded Signup flow. Completing the flow returns their
 exchangeable token code
@@ -46,7 +47,7 @@ The 24-hour customer service window restriction applies to messages sent via Clo
 Feature comparison
 The following table describes features available to business customers who have been onboarded to Cloud API, as well as any changes to WhatsApp Business app functionality post-onboarding.
 Existing feature on the WhatsApp Business App
-Changes to features on the WhatsApp Business App AFTER onboarding to Cloud API
+Changes to features on the WhatsApp Business App after onboarding to Cloud API
 Is the WhatsApp Business app feature supported on Cloud API?
 Individual (1:1) chats
 Message Edit/Revoke is now supported.
@@ -66,9 +67,9 @@ Live location message
 Live location messages will be disabled for all individual (1:1) chats
 Not supported.
 Broadcast lists
-Broadcast list will be disabled.
-Business will not be able to create new Broadcast Lists.
-Existing Broadcast Lists will become read-only.
+Broadcast lists will be disabled.
+Business will not be able to create new Broadcast lists.
+Existing Broadcast lists will become read-only.
 Not supported.
 Voice and video calls
 Not supported.
@@ -95,7 +96,7 @@ Step 1: Subscribe to webhooks
 Navigate to the
 App Dashboard
 Configuration
-panel and subscribe your app to the following WhatsApp Business account webhook topic fields, and make sure your app’s callback code can digest payloads for each of them. Note that these fields are in addition to any fields you are already subscribed to as a partner.
+panel and subscribe your app to the following WhatsApp Business account webhook topic fields, and make sure your app’s callback code can digest payloads for each of them. These fields are in addition to any fields you are already subscribed to as a partner.
 — describes past messages the business customer has sent/received
 smb_app_state_sync
 — describes the business customer’s current and new contacts
@@ -120,7 +121,7 @@ WABA selection screen
 has been replaced with a screen that gives you the option to connect your existing WhatsApp Business account, the feature is enabled:
 Step 3: Surface Embedded Signup to customers
 Once you have confirmed that the feature has been enabled, surface Embedded Signup to your business customers.
-Note that when a business completes the flow and you
+When a business completes the flow and you
 onboard the customer
 , you have 24 hours to
 synchronize their messaging history
@@ -178,7 +179,7 @@ smb_app_state_sync
 webhooks describing the WhatsApp contacts in the business’s WhatsApp Business app. Future additions or changes to the business’s
 WhatsApp contacts
 will trigger a corresponding smb_app_state_sync webhook.
-Note that you can only perform this step once. If you need to perform it again, the customer must first offboard, then complete the Embedded Signup flow again.
+You can only perform this step once. If you need to perform it again, the customer must first offboard, then complete the Embedded Signup flow again.
 Example request
 curl -X  POST \
 'https://graph.facebook.com/<API_VERSION>/<BUSINESS_PHONE_NUMBER_ID>/smb_app_data \
@@ -195,7 +196,7 @@ Step 2: Initiate message history synchronization
 SMB App Data API
 again, this time to initiate messaging history synchronization.
 Upon success, zero, one, or more history webhooks will be triggered, depending on if the business chose to share their messaging history with you.
-Note that you can only perform this step once. If you need to perform it again, the customer must first offboard, then complete the Embedded Signup flow again.
+You can only perform this step once. If you need to perform it again, the customer must first offboard, then complete the Embedded Signup flow again.
 Messaging history shared
 If the business chose to share their messaging history with you, a series of history webhooks will be triggered, describing each message sent to, or received from, WhatsApp users within a set period of time.
 for a description of the contents of these webhooks and how they are organized.
@@ -211,7 +212,7 @@ curl -X  POST \
 "messaging_product": "whatsapp",
 "sync_type": "history"
 Example response
-If the request is successful, the API will respond with the following JSON payload. Note that this response only indicates successful acceptance of the request; it does not indicate whether the business shared their messaging history with you.
+If the request is successful, the API will respond with the following JSON payload. This response only indicates successful acceptance of the request; it does not indicate whether the business shared their messaging history with you.
 "messaging_product": "whatsapp",
 "request_id" : "<REQUEST_ID>"
 value in case you need to contact support.
@@ -519,7 +520,7 @@ Chat history contents
 If the business has already approved chat history sharing when the partner requests the business’s chat history, a series of history webhooks will be triggered, describing all messages sent or received within 180 days of the time when the business was onboarded onto Cloud API.
 messages that are part of a group chat will not be included
 media messages will not include media asset IDs; instead, additional history webhooks containing media message asset IDs will be sent separately, but only for media messages sent within 14 days of onboarding
-Note that for efficiency purposes, a single webhook could potentially describe thousands of messages, so capture its contents first, then process the contents asynchronously.
+For efficiency purposes, a single webhook could potentially describe thousands of messages, so capture its contents first, then process the contents asynchronously.
 Phases and chunks
 Webhooks are divided into three history phases, where day 0 indicates the time when the business was onboarded onto Cloud API:
 phase 0: day 0 through day 1
@@ -606,7 +607,7 @@ wamid.HBgLMTY0NjcwNDM1OTUVAgARGBIyNDlBOEI5QUQ4NDc0N0FCNjMA
 Unix timestamp indicating when the message was received by the recipient’s device.
 <MESSAGE_TYPE>
 Message type
-. Note that this placeholder appears twice in the syntax above, as it serves as a placeholder for the
+. This placeholder appears twice in the syntax above, as it serves as a placeholder for the
 property’s value and its matching property name. See the
 example payload below
 for a thread with various message types.
@@ -616,7 +617,7 @@ media_placeholder
 example payload below
 describing a media message’s contents.
 <MESSAGE_CONTENTS>
-An object describing the message’s contents. This value will vary based on the message type, as well as the contents message.
+An object describing the message’s contents. This value will vary based on the message type, as well as the contents of the message.
 For example, if a business sends an
 message without a caption, the object would not include the
 Sending messages
@@ -626,7 +627,7 @@ for examples of payloads for each message type.
 Indicates the message’s most recent delivery stats. Values can be:
 Example payload — chat history sharing approved
 Example payload for two message threads: (1) a thread containing a text message and video message sent to a WhatsApp user, and the WhatsApp user’s response, and (2) a text message sent to a WhatsApp user thanking them for their order.
-Note that the media message’s contents in the first thread are not described. Instead, a second webhook is triggered, describing the media message’s contents.
+The media message’s contents in the first thread are not described. Instead, a second webhook is triggered, describing the media message’s contents.
 "object": "whatsapp_business_account",
 "id": "102290129340398",
 "changes": [
@@ -813,7 +814,7 @@ wamid.HBgLMTY0NjcwNDM1OTUVAgARGBIyNDlBOEI5QUQ4NDc0N0FCNjMA
 Unix timestamp indicating when the webhook was triggered.
 <MESSAGE_TYPE>
 Message type
-. Note that this placeholder appears twice in the syntax above, as it serves as a placeholder for the
+. This placeholder appears twice in the syntax above, as it serves as a placeholder for the
 property’s value and its matching property name.
 <MESSAGE_CONTENTS>
 An object describing the message’s contents.
